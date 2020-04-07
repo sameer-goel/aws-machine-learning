@@ -26,7 +26,7 @@ condo -->   house -->   Apartment ---> ?? we will use one-hot encoding as if we 
 
 ---
 ### Text Cleaning
-<img src="![](https://i.imgur.com/xADNfIy.png) " height="300" />
+<img src="https://i.imgur.com/xADNfIy.png" height="300" />
 
 #### 1 Removing Punctiation and traform to lower case
 remove "A", "An", "The", "is", "are"
@@ -41,7 +41,7 @@ TriGram - "hip hip hurrey"
 
 #### 3 TF-idf Term Frequency - Inverse Document Frequency
 Used to filter out not importnt common words
-![](https://i.imgur.com/ZwjMTvz.png)
+<img src="https://i.imgur.com/ZwjMTvz.png" height="300" />
 
 ### Use-case of each method
 ![](https://i.imgur.com/QISoj20.png)
