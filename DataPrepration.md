@@ -71,7 +71,7 @@ so its good to remove any outliers before doing normalization (random-cut forest
 Create bins for scattered values like 0-25, 25-50, 50-73
 
 ### Image Feature Engineering
-<img src="https://i.imgur.com/EKNY5Qe.png" height="10px" />
+<img src="https://i.imgur.com/EKNY5Qe.png" height="50px" />
 
 
 
