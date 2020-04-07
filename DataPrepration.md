@@ -28,19 +28,55 @@ condo -->   house -->   Apartment ---> ?? we will use one-hot encoding as if we 
 ### Text Cleaning
 ![](https://i.imgur.com/xADNfIy.png)
 
-#### Bag of words or N Gram =1
+#### 1 Removing Punctiation and traform to lower case
+remove "A", "An", "The", "is", "are"
+
+#### 2 Bag of words or N Gram =1
 Tokenize each word if N Gram/Unigram is 1 but let say it is 2/Bi-gram or more, it will tokenize words like:
 BiGram - "not good", "Very Poor"
 TriGram - "hip hip hurrey"
 
-##### Orthogonal Sparse Bigram (OSB)
+##### 1a Orthogonal Sparse Bigram (OSB)
 ![](https://i.imgur.com/7d3VltX.png)
 
-#### TF-idf Term Frequency - Inverse Document Frequency
+#### 3 TF-idf Term Frequency - Inverse Document Frequency
 Used to filter out not importnt common words
 ![](https://i.imgur.com/ZwjMTvz.png)
 
 ### Use-case of each method
 ![](https://i.imgur.com/QISoj20.png)
+
+#### 4 Cartesian Product
+Create new feature from combination of set of words
+![](https://i.imgur.com/nCRUlwR.png)
+
+#### 5 Date Engineering
+Separate Year, Month, Date, Day, Hour, Min, Sec, MilSec
+
+##### Summary of above techniques
+![](https://i.imgur.com/4nuUtEI.png)
+---
+
+### Numerical Feature Engineering
+
+1. Feature Scaling
+2. Binning
+
+#### 1. Feature Scaling
+##### Normalization: Scale down the scale of values between 0 and 1, but Outliers can create problems 
+so its good to remove any outliers before doing normalization (random-cut forest can be used with outliers).
+##### Standardization: It can also scale down the values with respect to Avg value as 0 and rest values according to Standard deviation, so Outliers does not create much problem.
+
+#### 2. Binning
+Create bins for scattered values like 0-25, 25-50, 50-73
+
+### Image Feature Engineering
+![](https://i.imgur.com/EKNY5Qe.png)
+
+
+
+
+
+
 
 
