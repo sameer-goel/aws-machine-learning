@@ -24,7 +24,7 @@ condo -->   house -->   Apartment ---> ?? we will use one-hot encoding as if we 
 <img src="https://i.imgur.com/HqgHRv8.jpg" width="600" />
 <img src="https://mk0analyticsindf35n9.kinstacdn.com/wp-content/uploads/2019/10/2.jpeg" width="600" /> 
 
----
+________________________________
 ### Text Cleaning
 <img src="https://i.imgur.com/xADNfIy.png" width="600" />
 
@@ -55,7 +55,7 @@ Separate Year, Month, Date, Day, Hour, Min, Sec, MilSec
 
 ##### Summary of above techniques
 <img src="https://i.imgur.com/4nuUtEI.png" width="600" />
----
+_________________________
 
 ### Numerical Feature Engineering
 
