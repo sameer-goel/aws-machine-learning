@@ -55,7 +55,7 @@ Separate Year, Month, Date, Day, Hour, Min, Sec, MilSec
 
 ##### Summary of above techniques
 <img src="https://i.imgur.com/4nuUtEI.png" width="600" />
-________________________________
+________________________________________________________________________________________________
 
 ### Numerical Feature Engineering
 
