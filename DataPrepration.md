@@ -7,7 +7,8 @@ Most important and time consuming process of Data Science like Tex cleaning, Mis
 #### Some commong techniques are:
 1. Categorical Encoding - Converting categorical values into numerics, using one-hot encoding.
 2. Feature Engineering - Select most relevent features for ML Model.
-3. Handling Missing Values - Removing missing or duplicate data.
+3. Handling Missing Values - Removing missing or duplicate data. 
+nan.() , df.duplicated()
 
 ### Categorical Encoding
 
