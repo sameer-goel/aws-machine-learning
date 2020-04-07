@@ -41,7 +41,7 @@ TriGram - "hip hip hurrey"
 
 #### 3 TF-idf Term Frequency - Inverse Document Frequency
 Used to filter out not importnt common words
-<img src="https://i.imgur.com/ZwjMTvz.png" width="600" />
+<img src="https://i.imgur.com/ZwjMTvz.png" width="800" />
 
 ### Use-case of each method
 ![](https://i.imgur.com/QISoj20.png)
