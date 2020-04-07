@@ -41,7 +41,7 @@ TriGram - "hip hip hurrey"
 
 #### 3 TF-idf Term Frequency - Inverse Document Frequency
 Used to filter out not importnt common words
-<img src="https://i.imgur.com/ZwjMTvz.png" height="300" />
+<img src="https://i.imgur.com/ZwjMTvz.png" width="300" />
 
 ### Use-case of each method
 ![](https://i.imgur.com/QISoj20.png)
@@ -71,7 +71,7 @@ so its good to remove any outliers before doing normalization (random-cut forest
 Create bins for scattered values like 0-25, 25-50, 50-73
 
 ### Image Feature Engineering
-<img src="https://i.imgur.com/EKNY5Qe.png" height="300" />
+<img src="https://i.imgur.com/EKNY5Qe.png" width="300" />
 
 
 
