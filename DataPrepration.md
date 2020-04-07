@@ -2,7 +2,7 @@
 
 Most important and time consuming process of Data Science like Tex cleaning, Missing Values, Outliers, OneHot encoding, Unform data types.
 
-<img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fgilpress%2Ffiles%2F2016%2F03%2FTime-1200x511.jpg" height="300" />
+<img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fgilpress%2Ffiles%2F2016%2F03%2FTime-1200x511.jpg" width="600" />
 
 #### Some commong techniques are:
 1. Categorical Encoding - Converting categorical values into numerics, using one-hot encoding.
@@ -21,12 +21,12 @@ condo -->   house -->   Apartment ---> ?? we will use one-hot encoding as if we 
 
 #### One Hot encoding | for Nominal (not ordinal) values | Lib: sklearn
 
-<img src="https://i.imgur.com/HqgHRv8.jpg" height="300" />
-<img src="https://mk0analyticsindf35n9.kinstacdn.com/wp-content/uploads/2019/10/2.jpeg" height="300" /> 
+<img src="https://i.imgur.com/HqgHRv8.jpg" width="600" />
+<img src="https://mk0analyticsindf35n9.kinstacdn.com/wp-content/uploads/2019/10/2.jpeg" width="600" /> 
 
 ---
 ### Text Cleaning
-<img src="https://i.imgur.com/xADNfIy.png" height="300" />
+<img src="https://i.imgur.com/xADNfIy.png" width="600" />
 
 #### 1 Removing Punctiation and traform to lower case
 remove "A", "An", "The", "is", "are"
@@ -37,7 +37,7 @@ BiGram - "not good", "Very Poor"
 TriGram - "hip hip hurrey"
 
 ##### 1a Orthogonal Sparse Bigram (OSB)
-<img src="https://i.imgur.com/7d3VltX.png" height="300" />
+<img src="https://i.imgur.com/7d3VltX.png" width="600" />
 
 #### 3 TF-idf Term Frequency - Inverse Document Frequency
 Used to filter out not importnt common words
@@ -48,13 +48,13 @@ Used to filter out not importnt common words
 
 #### 4 Cartesian Product
 Create new feature from combination of set of words
-<img src="https://i.imgur.com/nCRUlwR.png" height="300" />
+<img src="https://i.imgur.com/nCRUlwR.png" width="600" />
 
 #### 5 Date Engineering
 Separate Year, Month, Date, Day, Hour, Min, Sec, MilSec
 
 ##### Summary of above techniques
-<img src="https://i.imgur.com/4nuUtEI.png" height="300" />
+<img src="https://i.imgur.com/4nuUtEI.png" width="600" />
 ---
 
 ### Numerical Feature Engineering
