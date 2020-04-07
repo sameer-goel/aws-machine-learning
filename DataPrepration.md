@@ -11,8 +11,36 @@ Most important and time consuming process of Data Science like Tex cleaning, Mis
 
 ### Categorical Encoding
 
-#### One Hot encoding | Lib: sklearn
-![](https://mk0analyticsindf35n9.kinstacdn.com/wp-content/uploads/2019/10/2.jpeg) 
-![](https://chrisalbon.com/images/machine_learning_flashcards/One-Hot_Encoding_print.png)
+#### Ordinal Values
 
- 
+Yes --> 1      No --> 0
+
+Small --> 5      Medium --> 10     Large --> 15     None --> 0
+
+condo -->   house -->   Apartment ---> ?? we will use one-hot encoding as if we assign 5,10,15 they are not ordinal in nature
+
+#### One Hot encoding | for Nominal (not ordinal) values | Lib: sklearn
+
+![](https://i.imgur.com/HqgHRv8.jpg)
+![](https://mk0analyticsindf35n9.kinstacdn.com/wp-content/uploads/2019/10/2.jpeg) 
+
+---
+### Text Cleaning
+![](https://i.imgur.com/xADNfIy.png)
+
+#### Bag of words or N Gram =1
+Tokenize each word if N Gram/Unigram is 1 but let say it is 2/Bi-gram or more, it will tokenize words like:
+BiGram - "not good", "Very Poor"
+TriGram - "hip hip hurrey"
+
+##### Orthogonal Sparse Bigram (OSB)
+![](https://i.imgur.com/7d3VltX.png)
+
+#### TF-idf Term Frequency - Inverse Document Frequency
+Used to filter out not importnt common words
+![](https://i.imgur.com/ZwjMTvz.png)
+
+### Use-case of each method
+![](https://i.imgur.com/QISoj20.png)
+
+
