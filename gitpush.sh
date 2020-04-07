@@ -1,0 +1,1 @@
+git add --all && git commit -m "new changes" && git push
