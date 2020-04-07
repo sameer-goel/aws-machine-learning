@@ -29,7 +29,7 @@ ________________________________
 ### Text Cleaning
 <img src="https://i.imgur.com/xADNfIy.png" width="600" />
 
-#### 1 Removing Punctiation and traform to lower case
+#### 1 Traform to lower case --> remove white spaces --> Removing Punctiation
 remove "A", "An", "The", "is", "are"
 
 #### 2 Bag of words or N Gram =1
@@ -66,6 +66,8 @@ ________________________________________________________________________________
 #### 1. Feature Scaling
 ##### Normalization: Scale down the scale of values between 0 and 1, but Outliers can create problems 
 so its good to remove any outliers before doing normalization (random-cut forest can be used with outliers).
+<img src="https://www.bogotobogo.com/python/scikit-learn/images/scikit-Processing-Datasets-Partitioning-Feature-Selection/X_norm_0.png" height="300" />
+
 ##### Standardization: It can also scale down the values with respect to Avg value as 0 and rest values according to Standard deviation, so Outliers does not create much problem.
 <img src="/images/standardization.png" height="300" />
 
