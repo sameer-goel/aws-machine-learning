@@ -66,9 +66,11 @@ ________________________________________________________________________________
 ##### Normalization: Scale down the scale of values between 0 and 1, but Outliers can create problems 
 so its good to remove any outliers before doing normalization (random-cut forest can be used with outliers).
 ##### Standardization: It can also scale down the values with respect to Avg value as 0 and rest values according to Standard deviation, so Outliers does not create much problem.
+<img src="./images/standardization.png" height="300" />
 
 #### 2. Binning
 Create bins for scattered values like 0-25, 25-50, 50-73
+(Gradient descent and kNN requires binning)
 
 ### Image Feature Engineering
 <img src="https://i.imgur.com/EKNY5Qe.png" width="600" />
@@ -76,7 +78,7 @@ Create bins for scattered values like 0-25, 25-50, 50-73
 
 
 
+Use fit_transform() only with Training data
 
-
-
+Use transform() for Test and Validation
 
