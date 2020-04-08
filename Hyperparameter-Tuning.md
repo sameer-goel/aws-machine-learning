@@ -7,6 +7,9 @@ Parameters that affect the performance and structure of an ML algorithm
 * Ensemble Bagging model: Number of individual models
 
 * Grid Search - Brute force/exhaustive tuning
+Alternative is
+* Random Search - randomly tuning the parameters
 
+* Bayesian Search - Keeps track of last hypertuning evaluations and build probablistic model
 
 
