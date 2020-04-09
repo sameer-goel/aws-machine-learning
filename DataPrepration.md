@@ -88,5 +88,3 @@ Use fit_transform() only with Training data
 Use transform() for Test and Validation
 
 ### Data split between Training, Validation and Testing.
-
-<img src="https://i.imgur.com/7aLAaMT.png" />
