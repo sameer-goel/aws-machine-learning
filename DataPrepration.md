@@ -4,7 +4,7 @@ Most important and time consuming process of Data Science like Tex cleaning, Mis
 
 <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fgilpress%2Ffiles%2F2016%2F03%2FTime-1200x511.jpg" width="600" />
 
-#### Some commong techniques are:
+### Some commong techniques are:
 1. Categorical Encoding - Converting categorical values into numerics, using one-hot encoding.
 2. Feature Engineering - Select most relevent features for ML Model.
 3. Handling Missing Values - Removing missing or duplicate data. 
@@ -87,3 +87,6 @@ Use fit_transform() only with Training data
 
 Use transform() for Test and Validation
 
+### Data split between Training, Validation and Testing.
+
+<img src="https://share.getcloudapp.com/NQuDkLEz" height="300" />
