@@ -89,4 +89,4 @@ Use transform() for Test and Validation
 
 ### Data split between Training, Validation and Testing.
 
-<img src="https://share.getcloudapp.com/NQuDkLEz" height="300" />
+<img src="https://i.imgur.com/jOwZSNZ.png" height="300" />
