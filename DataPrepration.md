@@ -55,6 +55,14 @@ Now we have understood the data, lets work on making this dataset polished ready
     - Mean/variance standardization
     - MinMaxscaling
 
+### Normalization/Min-Max scaling: Transoform the between 0 and 1, but Outliers can create problems 
+so its good to remove any outliers before doing normalization (random-cut forest can be used with outliers).
+<img src="https://i.imgur.com/d3FL118.png" height="300" />
+<img src="https://www.bogotobogo.com/python/scikit-learn/images/scikit-Processing-Datasets-Partitioning-Feature-Selection/X_norm_0.png" height="300" />
+
+### Standardization: Scale values to be centered around mean 0 with standard deviation 1, so Outliers does not create much problem.
+<img src="https://i.imgur.com/4PIqnfz.png" height="300" />
+
 ## Some commong techniques are:
 1. Categorical Encoding - Converting categorical values into numerics, using one-hot encoding.
 2. Feature Engineering - Select most relevent features for ML Model.
@@ -118,14 +126,6 @@ ________________________________________________________________________________
 
 1. Feature Scaling
 2. Binning
-
-#### 1. Feature Scaling
-##### Normalization: Scale down the scale of values between 0 and 1, but Outliers can create problems 
-so its good to remove any outliers before doing normalization (random-cut forest can be used with outliers).
-<img src="https://www.bogotobogo.com/python/scikit-learn/images/scikit-Processing-Datasets-Partitioning-Feature-Selection/X_norm_0.png" height="300" />
-
-##### Standardization: It can also scale down the values with respect to Avg value as 0 and rest values according to Standard deviation, so Outliers does not create much problem.
-<img src="/images/standardization.png" height="300" />
 
 #### 2. Binning
 Create bins for scattered values like 0-25, 25-50, 50-73
