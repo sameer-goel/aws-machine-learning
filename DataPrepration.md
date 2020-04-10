@@ -85,6 +85,16 @@ Used to filter out not importnt common words
 ### Use-case of each method
 ![](https://i.imgur.com/QISoj20.png)
 
+#### 4 Cartesian Product
+Create new feature from combination of set of words
+<img src="https://i.imgur.com/nCRUlwR.png" width="600" />
+
+#### 5 Date Engineering
+Separate Year, Month, Date, Day, Hour, Min, Sec, MilSec
+
+##### Summary of above techniques
+<img src="https://i.imgur.com/4nuUtEI.png" width="600" />
+
 **********************************************************************************************
 
 Now we have Cleaned our dataset, clean data is good to read by human but machine models might have to encode those values.
@@ -106,7 +116,7 @@ Even further for many classes: Averaging the target value for each category. The
 
 <img src="https://i.imgur.com/HqgHRv8.jpg" width="600" />
 
-________________________________
+
 ### Text Cleaning | NLtk lib (Natural Language Tool Kit)
 <img src="https://i.imgur.com/xADNfIy.png" width="600" />
 
@@ -140,35 +150,17 @@ Separate Year, Month, Date, Day, Hour, Min, Sec, MilSec
 
 ##### Summary of above techniques
 <img src="https://i.imgur.com/4nuUtEI.png" width="600" />
-________________________________________________________________________________________________
 
-### Numerical Feature Engineering
-
-1. Feature Scaling
-2. Binning
-
-#### 2. Binning
-Create bins for scattered values like 0-25, 25-50, 50-73
-(Gradient descent and kNN requires binning)
-
-### Image Feature Engineering
-<img src="https://i.imgur.com/EKNY5Qe.png" width="600" />
+**********************************************************************
 
 ## Data Formats supported by Sagemaker
-
 1. File : Load from S3, CSV, JSON, Parquet, png, jpg
 2. Pipe : Stream from S3, recordIO-protobuf
 
-
-
-____________________________________________
-
-Use fit_transform() only with Training data
-
-Use transform() for Test and Validation
-
 ## Data Split
 <img src="https://i.imgur.com/zUcDON7.png" height="300" />
+
+
 
 
 
