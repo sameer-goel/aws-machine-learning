@@ -20,7 +20,7 @@ Most important and time consuming process of Data Science like Tex cleaning, Mis
 * Multivariate statistics (more than one variable)
     * Correlation, Contingency Tables
 
-### Correlation
+#### Correlation
 * Correlations: How strongly pairs of attributes are related.
 * **Scatterplot** matrices visualize attribute-target and attribute-attribute pairwise relationships.
 * Correlation matrices measure the linear dependence between features; can be visualized with **heat-maps**
@@ -35,7 +35,7 @@ Tip: Multi-collinearity
 - With the regression models, we should **select one of the correlated pairs** and discard the other.
 - **Decision Trees** are immune to this problem.
 
-________________________________
+************************************************************************************
 
 ## Some commong techniques are:
 1. Categorical Encoding - Converting categorical values into numerics, using one-hot encoding.
