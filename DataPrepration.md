@@ -117,7 +117,7 @@ Even further for many classes: Averaging the target value for each category. The
 <img src="https://i.imgur.com/HqgHRv8.jpg" width="600" />
 
 
-### Text Cleaning | NLtk lib (Natural Language Tool Kit)
+## Text Cleaning | NLtk lib (Natural Language Tool Kit)
 <img src="https://i.imgur.com/xADNfIy.png" width="600" />
 
 #### 1 Traform to lower case --> remove white spaces --> Removing Punctiation and Stop words
