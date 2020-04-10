@@ -4,6 +4,20 @@ Most important and time consuming process of Data Science like Tex cleaning, Mis
 
 <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fgilpress%2Ffiles%2F2016%2F03%2FTime-1200x511.jpg" width="600" />
 
+## Start with Descriptive Statistics
+
+* Overall statistics
+    * Number of instances (i.e. number of rows)
+    * Number of attributes (i.e. number of columns)
+* Attribute statistics (univariate or single variable)
+    * Statistics for numeric attributes (mean, variance, etc.) --df.describe() 
+    * Statistics for categorical attributes (histograms, mode, most/least frequent values, percentage, number of unique values)
+        * Histogram of values: E.g., df[<attribute>].value_counts() or seaborn’sdistplot()
+    * Target statistics
+        * Class distribution: E.g., df[<target>].value_counts() or np.bincount(y)
+* Multivariate statistics (more than one variable)
+    * Correlation, Contingency Tables
+
 ### Some commong techniques are:
 1. Categorical Encoding - Converting categorical values into numerics, using one-hot encoding.
 2. Feature Engineering - Select most relevent features for ML Model.
@@ -99,29 +113,7 @@ Use transform() for Test and Validation
 ## Data Split
 <img src="https://i.imgur.com/zUcDON7.png" height="300" />
 
-## Model Evaluation
 
-### Regression Models
-1. Underfitting: - Model is not good enough to predict.
-2. Overfitting: - Model memorizes and too much inclined with existing data. Predicting New unseen data will be a challange.
-
-### Classificaiton Models
-
-<img src="https://secureservercdn.net/198.71.233.197/l87.de8.myftpupload.com/wp-content/uploads/2016/09/table-blog.png" height="300" />
-
-- **Accuracy:** The percent (ratio) of cases classified correctly.
-
-- **Precision:** Accuracy of a predicted positive outcome in percent.
-- **Recall:** Measure the strength of the model to predict a positive outcome.
-- **f1_score:** It is a combined metric. Harmonic mean of percision and recall.
-**0(𝑏𝑎𝑑)≤f1_score≤1(good)**
-
-- **Specificity:** Measure the strength of the model to predict a negetive outcome.
-
-| Accuracy  | Precision | Recall | f1 score | Specificity |
-|:---------:|:---------:|:------:|:--------:|:-----------:|
-|TP + TN    |    TP     |   TP   |2(Pre*Rec)|   TN        |
-|TP+TN+FP+FN|  TP+FP    | TP+FN  | (Pre+Rec)| TN+FP       |
 
 
 
