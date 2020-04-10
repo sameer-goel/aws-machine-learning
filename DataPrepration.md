@@ -28,6 +28,11 @@ Most important and time consuming process of Data Science like Tex cleaning, Mis
 `ax = sns.heatmap(cm, cbar=True, annot=True, square=True, fmt='.1f', yticklabels=cols, xticklabels=cols)plt.show()`
 <img src="https://i.imgur.com/WAO4Phg.png" height="300" />
 
+Tip: Multi-collinearity
+- Highly correlated (pos. or negative) attributes usually degrade performance of linear ML models such as linear and logistic regression models.
+- With the regression models, we should **select one of the correlated pairs** and discard the other.
+- **Decision Trees** are immune to this problem
+
 ## Some commong techniques are:
 1. Categorical Encoding - Converting categorical values into numerics, using one-hot encoding.
 2. Feature Engineering - Select most relevent features for ML Model.
