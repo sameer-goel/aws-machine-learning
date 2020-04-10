@@ -109,6 +109,8 @@ Use transform() for Test and Validation
 
 <img src="https://secureservercdn.net/198.71.233.197/l87.de8.myftpupload.com/wp-content/uploads/2016/09/table-blog.png" height="300" />
 
+<img src="https://secureservercdn.net/198.71.233.197/l87.de8.myftpupload.com/wp-content/uploads/2016/09/table-blog.png" height="300" />
+
 - **Accuracy:** The percent (ratio) of cases classified correctly.
 
 - **Precision:** Accuracy of a predicted positive outcome in percent.
