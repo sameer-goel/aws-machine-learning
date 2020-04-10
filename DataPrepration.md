@@ -96,5 +96,25 @@ Use fit_transform() only with Training data
 
 Use transform() for Test and Validation
 
-## Data Split 
+## Data Split
 <img src="https://i.imgur.com/zUcDON7.png" height="300" />
+
+## Model Evaluation
+
+### Regression Models
+1. Underfitting: - Model is not good enough to predict.
+2. Overfitting: - Model memorizes and too much inclined with existing data. Predicting New unseen data will be a challange.
+
+### Classificaiton Models
+1. 
+- **Accuracy:** The percent (ratio) of cases classified correctly.
+- **Precision:** Accuracy of a predicted positive outcome in percent.
+- **f1_score:** It is a combined metric. Harmonic mean of percision and recall.
+
+        |TP + TN|
+𝐴𝑐𝑐𝑢𝑟𝑎𝑐𝑦: |-------|
+        |TP+TN+FP+FN|
+
+
+- **Recall:** Measure the strength of the model to predict a positive outcome.
+- **Specificity:** Measure the strength of the model to predict a negetive outcome.
