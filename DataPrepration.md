@@ -118,7 +118,7 @@ Use transform() for Test and Validation
 
 | Accuracy  | Precision | Recall | f1 score   | Specificity |
 |:---------:|:---------:|:------:|:----------:|:-----------:|
-|_TP + TN_  |   _TP_    |  _TP_  |_2(Pre*Rec)_|  _TN_       |
+|__TP + TN__  |   __TP__    |  __TP__  |__2(Pre*Rec)__|  __TN__       |
 |TP+TN+FP+FN|  TP+FP    | TP+FN  | (Pre+Rec)  | TN+FP       |
 
 
