@@ -116,41 +116,6 @@ Even further for many classes: Averaging the target value for each category. The
 
 <img src="https://i.imgur.com/HqgHRv8.jpg" width="600" />
 
-
-## Text Cleaning | NLtk lib (Natural Language Tool Kit)
-<img src="https://i.imgur.com/xADNfIy.png" width="600" />
-
-#### 1 Traform to lower case --> remove white spaces --> Removing Punctiation and Stop words
-remove "A", "An", "The", "is", "are"
-
-#### 2 Stemming and Synonym nomalization
-jumping --> jump, awesome, wonderful, great --> great
-
-#### 3 Bag of words or N Gram =1
-Tokenize each word if N Gram/Unigram is 1 but let say it is 2/Bi-gram or more, it will tokenize words like:
-BiGram - "not good", "Very Poor"
-TriGram - "hip hip hurrey"
-
-##### 3a Orthogonal Sparse Bigram (OSB)
-<img src="https://i.imgur.com/7d3VltX.png" width="600" />
-
-#### 4 TF-idf Term Frequency - Inverse Document Frequency
-Used to filter out not importnt common words
-<img src="https://i.imgur.com/ZwjMTvz.png" width="800" />
-
-### Use-case of each method
-![](https://i.imgur.com/QISoj20.png)
-
-#### 4 Cartesian Product
-Create new feature from combination of set of words
-<img src="https://i.imgur.com/nCRUlwR.png" width="600" />
-
-#### 5 Date Engineering
-Separate Year, Month, Date, Day, Hour, Min, Sec, MilSec
-
-##### Summary of above techniques
-<img src="https://i.imgur.com/4nuUtEI.png" width="600" />
-
 **********************************************************************
 
 ## Data Formats supported by Sagemaker
