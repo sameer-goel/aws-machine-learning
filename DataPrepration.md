@@ -112,7 +112,7 @@ Use transform() for Test and Validation
 - **f1_score:** It is a combined metric. Harmonic mean of percision and recall.
 
 |TP + TN|
-|-------|
+=========
 |TP+TN+FP+FN|
 
 
