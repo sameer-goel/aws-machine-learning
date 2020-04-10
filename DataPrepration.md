@@ -10,7 +10,7 @@ Most important and time consuming process of Data Science like Tex cleaning, Mis
 3. Handling Missing Values - Removing missing or duplicate data. 
 nan.() , df.duplicated()
 
-### Categorical Encoding
+### 1. Categorical Encoding
 
 #### Ordinal Values
 
@@ -24,6 +24,9 @@ condo -->   house -->   Apartment ---> ?? we will use one-hot encoding as if we 
 
 <img src="https://i.imgur.com/HqgHRv8.jpg" width="600" />
 <img src="https://mk0analyticsindf35n9.kinstacdn.com/wp-content/uploads/2019/10/2.jpeg" width="600" />
+
+### 2. Handling Missing Values
+
 ________________________________
 ### Text Cleaning | NLtk lib (Natural Language Tool Kit)
 <img src="https://i.imgur.com/xADNfIy.png" width="600" />
@@ -80,11 +83,18 @@ Create bins for scattered values like 0-25, 25-50, 50-73
 ### Image Feature Engineering
 <img src="https://i.imgur.com/EKNY5Qe.png" width="600" />
 
+## Data Formats supported by Sagemaker
+
+1. File : Load from S3, CSV, JSON, Parquet, png, jpg
+2. Pipe : Stream from S3, recordIO-protobuf
 
 
+
+____________________________________________
 
 Use fit_transform() only with Training data
 
 Use transform() for Test and Validation
 
-### Data split between Training, Validation and Testing
+## Data Split 
+<img src="https://i.imgur.com/zUcDON7.png" height="300" />
