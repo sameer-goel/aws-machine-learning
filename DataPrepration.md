@@ -112,7 +112,7 @@ Use transform() for Test and Validation
 - **Precision:** Accuracy of a predicted positive outcome in percent.
 - **Recall:** Measure the strength of the model to predict a positive outcome.
 - **f1_score:** It is a combined metric. Harmonic mean of percision and recall.
->`0(𝑏𝑎𝑑)≤f1_score≤1(good)`
+**`0(𝑏𝑎𝑑)≤f1_score≤1(good)`**
 
 - **Specificity:** Measure the strength of the model to predict a negetive outcome.
 
