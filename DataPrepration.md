@@ -57,11 +57,10 @@ Now we have understood the data, lets work on making this dataset Cleaned
 
 ### 2.a Normalization/Min-Max scaling: Transoform the between 0 and 1, but Outliers can create problems 
 so its good to remove any outliers before doing normalization (random-cut forest can be used with outliers).
-<img src="https://i.imgur.com/d3FL118.png" height="300" />
-<img src="https://www.bogotobogo.com/python/scikit-learn/images/scikit-Processing-Datasets-Partitioning-Feature-Selection/X_norm_0.png" height="300" />
+<img src="https://i.imgur.com/d3FL118.png" height="100" />
 
 ### 2.b Standardization: Scale values to be centered around mean 0 with standard deviation 1, so Outliers does not create much problem.
-<img src="https://i.imgur.com/4PIqnfz.png" height="300" />
+<img src="https://i.imgur.com/4PIqnfz.png" height="100" />
 
 ## Text Cleaning | NLtk lib (Natural Language Tool Kit)
 <img src="https://i.imgur.com/xADNfIy.png" width="600" />
