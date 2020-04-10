@@ -6,7 +6,7 @@ Most important and time consuming process of Data Science like Tex cleaning, Mis
 
 ## Most important is to Start with understanding your Data
 
-## Descriptive Statistics
+## Step 1: Descriptive Statistics
 
 * Overall statistics
     * Number of instances (i.e. number of rows)
@@ -38,14 +38,21 @@ Tip: Multi-collinearity
 ************************************************************************************
 
 Now we have understood the data, lets work on making this dataset Cleaned
+## Step 2: Tyding the data
 
 ## 1. Imputing Missing Values
 * Average imputation: Replaces missing values with the **average/mean** value in the column. Useful for **numeric** variables. 
 `df['col_name'].fillna((df['col_name'].mean()), inplace=True)`
 * Common point imputation: Use the **most common value/mode** for that column to replace missing values. Useful for **categorical** variables.
 `df['col_name'].fillna((df['col_name'].mode()), inplace=True)`
-* Advanced imputation: We can learn to predict missing values from complete samples using some machine learning techniques. 
-    * For example: AWS Datawigtool uses neural networks to predict missing values in tabular data. https://github.com/awslabs/datawig
+
+#### 1.1 Advance Imputation
+We can learn to predict missing values from complete samples using some machine learning techniques. 
+* For example: AWS Datawigtool uses Suvervised Learning neural networks to predict missing values in tabular data. https://github.com/awslabs/datawig 
+
+1. MAR Missing at Random
+2. MCAR Missing completely at Random
+3. MNAR Missing Not at Random
 
 ## 2. Feature scaling
 - Motivation: Many algorithms are sensitive to features being on different scales, e.g., **gradient descent** and **kNN**
@@ -61,6 +68,13 @@ so its good to remove any outliers before doing normalization (random-cut forest
 
 ### 2.b Standardization: Scale values to be centered around mean 0 with standard deviation 1, so Outliers does not create much problem.
 <img src="https://i.imgur.com/4PIqnfz.png" height="200" />
+
+### 2.c Binning
+Create bins for scattered values like 0-25, 25-50, 50-73
+(Gradient descent and kNN requires binning)
+
+### 3 Image Feature Engineering
+<img src="https://i.imgur.com/EKNY5Qe.png" width="600" />
 
 ## Text Cleaning | NLtk lib (Natural Language Tool Kit)
 
@@ -96,8 +110,25 @@ Separate Year, Month, Date, Day, Hour, Min, Sec, MilSec
 <img src="https://i.imgur.com/4nuUtEI.png" width="600" />
 
 **********************************************************************************************
+## Step 3: Feature Selection
 
-Now we have Cleaned our dataset, clean data is good to read by human but machine models might have to encode those values.
+Feature engineering:Using domain and data knowledge to create novel featuresas inputs for ML models often more art than science.
+
+Some rules of thumb
+- Use intuition: “What information would a humanuse to predict?”
+- Try generating many features, then apply dimensionality reduction if needed§Consider transformations of attributes (e.g., squaring)
+- Consider combinations of attributes (e.g., multiplication)
+- Do not overthink or include too much manual logic
+- **scikit-learn:sklearn.feature_extraction**
+
+### PCA: Principle component analysis
+Unsupervised learning alogorithm to reduce number of feature but still retain info.
+
+
+**********************************************************************************************
+
+Now we have Cleaned and Sorted data, clean data is good to read by human but machine models might have to encode those values.
+ ## Step 4: Encoding and Data Transformation
 
 ## Categorical Encoding
 
@@ -125,10 +156,9 @@ Even further for many classes: Averaging the target value for each category. The
 ## Data Split
 <img src="https://i.imgur.com/zUcDON7.png" height="300" />
 
+**********************************************************************
 
-
-
-
+ 
 
 
 
