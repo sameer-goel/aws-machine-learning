@@ -10,15 +10,25 @@ Most important and time consuming process of Data Science like Tex cleaning, Mis
     * Number of instances (i.e. number of rows)
     * Number of attributes (i.e. number of columns)
 * Attribute statistics (univariate or single variable)
-    * Statistics for numeric attributes (mean, variance, etc.) --df.describe() 
-    * Statistics for categorical attributes (histograms, mode, most/least frequent values, percentage, number of unique values)
-        * Histogram of values: E.g., df[<attribute>].value_counts() or seaborn’sdistplot()
+    * Statistics for **numeric** attributes (mean, variance, etc.) --df.describe() 
+    * Statistics for **categorical** attributes (histograms, mode, most/least frequent values, percentage, number of unique values)
+        * Histogram of values: E.g., df[<attribute>].value_counts() or seaborn’s distplot()
     * Target statistics
         * Class distribution: E.g., df[<target>].value_counts() or np.bincount(y)
 * Multivariate statistics (more than one variable)
     * Correlation, Contingency Tables
 
-### Some commong techniques are:
+### Correlation
+* Correlations: How strongly pairs of attributes are related.
+* **Scatterplot** matrices visualize attribute-target and attribute-attribute pairwise relationships.
+* Correlation matrices measure the linear dependence between features; can be visualized with **heat-maps**
+
+#### Correlation matrix Heat map
+`cm = np.corrcoef(df[cols].values.T)`
+`ax = sns.heatmap(cm, cbar=True, annot=True, square=True, fmt='.1f', yticklabels=cols, xticklabels=cols)plt.show()`
+<img src="https://i.imgur.com/WAO4Phg.png" height="300" />
+
+## Some commong techniques are:
 1. Categorical Encoding - Converting categorical values into numerics, using one-hot encoding.
 2. Feature Engineering - Select most relevent features for ML Model.
 3. Handling Missing Values - Removing missing or duplicate data. 
