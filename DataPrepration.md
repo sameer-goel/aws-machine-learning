@@ -4,7 +4,9 @@ Most important and time consuming process of Data Science like Tex cleaning, Mis
 
 <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fgilpress%2Ffiles%2F2016%2F03%2FTime-1200x511.jpg" width="600" />
 
-## Start with Descriptive Statistics
+### Most import is to Start with understanding your Data
+
+## Descriptive Statistics
 
 * Overall statistics
     * Number of instances (i.e. number of rows)
@@ -31,7 +33,9 @@ Most important and time consuming process of Data Science like Tex cleaning, Mis
 Tip: Multi-collinearity
 - Highly correlated (pos. or negative) attributes usually degrade performance of linear ML models such as linear and logistic regression models.
 - With the regression models, we should **select one of the correlated pairs** and discard the other.
-- **Decision Trees** are immune to this problem
+- **Decision Trees** are immune to this problem.
+
+________________________________
 
 ## Some commong techniques are:
 1. Categorical Encoding - Converting categorical values into numerics, using one-hot encoding.
