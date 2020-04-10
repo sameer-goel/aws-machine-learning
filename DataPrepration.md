@@ -1,10 +1,10 @@
-## Data Prepration
+# Data Prepration
 
 Most important and time consuming process of Data Science like Tex cleaning, Missing Values, Outliers, OneHot encoding, Unform data types.
 
 <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fgilpress%2Ffiles%2F2016%2F03%2FTime-1200x511.jpg" width="600" />
 
-### Most import is to Start with understanding your Data
+## Most important is to Start with understanding your Data
 
 ## Descriptive Statistics
 
@@ -36,6 +36,24 @@ Tip: Multi-collinearity
 - **Decision Trees** are immune to this problem.
 
 ************************************************************************************
+
+Now we have understood the data, lets work on making this dataset polished ready for ML Model
+
+## Imputing Missing Values
+* Average imputation: Replaces missing values with the **average/mean** value in the column. Useful for **numeric** variables. 
+`df['col_name'].fillna((df['col_name'].mean()), inplace=True)`
+* Common point imputation: Use the **most common value/mode** for that column to replace missing values. Useful for **categorical** variables.
+`df['col_name'].fillna((df['col_name'].mode()), inplace=True)`
+* Advanced imputation: We can learn to predict missing values from complete samples using some machine learning techniques. 
+    * For example: AWS Datawigtool uses neural networks to predict missing values in tabular data. https://github.com/awslabs/datawig
+
+## Feature scaling
+- Motivation: Many algorithms are sensitive to features being on different scales, e.g., **gradient descent** and **kNN**
+- Solution: Bring features on to the **same scale**.
+- Note: Some algorithms like **decision trees** and **random forests** aren’t sensitive to features on different scales
+- Common choices (both for linear)
+    - Mean/variance standardization
+    - MinMaxscaling
 
 ## Some commong techniques are:
 1. Categorical Encoding - Converting categorical values into numerics, using one-hot encoding.
