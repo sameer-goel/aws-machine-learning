@@ -116,8 +116,8 @@ Use transform() for Test and Validation
 
 - **Specificity:** Measure the strength of the model to predict a negetive outcome.
 
-| Accuracy  | Precision | Recall | f1 score   | Specificity |
-|:---------:|:---------:|:------:|:----------:|:-----------:|
+
+
 |__TP + TN__  |   __TP__    |  __TP__  |__2(Pre*Rec)__|  __TN__       |
 |TP+TN+FP+FN|  TP+FP    | TP+FN  | (Pre+Rec)  | TN+FP       |
 
