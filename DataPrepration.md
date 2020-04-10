@@ -57,13 +57,12 @@ Now we have understood the data, lets work on making this dataset Cleaned
 
 ### 2.a Normalization/Min-Max scaling: Transoform the between 0 and 1, but Outliers can create problems 
 so its good to remove any outliers before doing normalization (random-cut forest can be used with outliers).
-<img src="https://i.imgur.com/d3FL118.png" height="100" />
+<img src="https://i.imgur.com/d3FL118.png" height="200" />
 
 ### 2.b Standardization: Scale values to be centered around mean 0 with standard deviation 1, so Outliers does not create much problem.
-<img src="https://i.imgur.com/4PIqnfz.png" height="100" />
+<img src="https://i.imgur.com/4PIqnfz.png" height="200" />
 
 ## Text Cleaning | NLtk lib (Natural Language Tool Kit)
-<img src="https://i.imgur.com/xADNfIy.png" width="600" />
 
 ### 1 Traform to lower case --> remove white spaces --> Removing Punctiation and Stop words
 remove "A", "An", "The", "is", "are"
@@ -88,16 +87,9 @@ Used to filter out not importnt common words
 
 **********************************************************************************************
 
-Now we have polished our dataset but we still need to shortlist most relevent features for our ML Model
+Now we have Cleaned our dataset, clean data is good to read by human but machine models might have to encode those values.
 
-## Some commong techniques are:
-
-1. Categorical Encoding - Converting categorical values into numerics, using one-hot encoding.
-2. Feature Engineering - Select most relevent features for ML Model.
-3. Handling Missing Values - Removing missing or duplicate data. 
-nan.() , df.duplicated()
-
-### 1. Categorical Encoding
+## Categorical Encoding
 
 #### Ordinal Values
 
@@ -107,12 +99,12 @@ Small --> 5      Medium --> 10     Large --> 15     None --> 0
 
 condo -->   house -->   Apartment ---> ?? we will use one-hot encoding as if we assign 5,10,15 they are not ordinal in nature
 
+Even further for many classes: Averaging the target value for each category. Then, replace the categorical values with the average target value.
+<img src="https://i.imgur.com/fQAXVXN.png" height="300" />
+
 #### One Hot encoding | for Nominal (not ordinal) values | Lib: sklearn
 
 <img src="https://i.imgur.com/HqgHRv8.jpg" width="600" />
-<img src="https://mk0analyticsindf35n9.kinstacdn.com/wp-content/uploads/2019/10/2.jpeg" width="600" />
-
-### 2. Handling Missing Values
 
 ________________________________
 ### Text Cleaning | NLtk lib (Natural Language Tool Kit)
