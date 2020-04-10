@@ -37,9 +37,9 @@ Tip: Multi-collinearity
 
 ************************************************************************************
 
-Now we have understood the data, lets work on making this dataset polished ready for ML Model
+Now we have understood the data, lets work on making this dataset Cleaned
 
-## Imputing Missing Values
+## 1. Imputing Missing Values
 * Average imputation: Replaces missing values with the **average/mean** value in the column. Useful for **numeric** variables. 
 `df['col_name'].fillna((df['col_name'].mean()), inplace=True)`
 * Common point imputation: Use the **most common value/mode** for that column to replace missing values. Useful for **categorical** variables.
@@ -47,7 +47,7 @@ Now we have understood the data, lets work on making this dataset polished ready
 * Advanced imputation: We can learn to predict missing values from complete samples using some machine learning techniques. 
     * For example: AWS Datawigtool uses neural networks to predict missing values in tabular data. https://github.com/awslabs/datawig
 
-## Feature scaling
+## 2. Feature scaling
 - Motivation: Many algorithms are sensitive to features being on different scales, e.g., **gradient descent** and **kNN**
 - Solution: Bring features on to the **same scale**.
 - Note: Some algorithms like **decision trees** and **random forests** aren’t sensitive to features on different scales
@@ -55,15 +55,44 @@ Now we have understood the data, lets work on making this dataset polished ready
     - Mean/variance standardization
     - MinMaxscaling
 
-### Normalization/Min-Max scaling: Transoform the between 0 and 1, but Outliers can create problems 
+### 2.a Normalization/Min-Max scaling: Transoform the between 0 and 1, but Outliers can create problems 
 so its good to remove any outliers before doing normalization (random-cut forest can be used with outliers).
 <img src="https://i.imgur.com/d3FL118.png" height="300" />
 <img src="https://www.bogotobogo.com/python/scikit-learn/images/scikit-Processing-Datasets-Partitioning-Feature-Selection/X_norm_0.png" height="300" />
 
-### Standardization: Scale values to be centered around mean 0 with standard deviation 1, so Outliers does not create much problem.
+### 2.b Standardization: Scale values to be centered around mean 0 with standard deviation 1, so Outliers does not create much problem.
 <img src="https://i.imgur.com/4PIqnfz.png" height="300" />
 
+## Text Cleaning | NLtk lib (Natural Language Tool Kit)
+<img src="https://i.imgur.com/xADNfIy.png" width="600" />
+
+### 1 Traform to lower case --> remove white spaces --> Removing Punctiation and Stop words
+remove "A", "An", "The", "is", "are"
+
+### 2 Stemming and Synonym nomalization
+jumping --> jump, awesome, wonderful, great --> great
+
+### 3 Bag of words or N Gram =1
+Tokenize each word if N Gram/Unigram is 1 but let say it is 2/Bi-gram or more, it will tokenize words like:
+BiGram - "not good", "Very Poor"
+TriGram - "hip hip hurrey"
+
+#### 3a Orthogonal Sparse Bigram (OSB)
+<img src="https://i.imgur.com/7d3VltX.png" width="600" />
+
+### 4 TF-idf Term Frequency - Inverse Document Frequency
+Used to filter out not importnt common words
+<img src="https://i.imgur.com/ZwjMTvz.png" width="800" />
+
+### Use-case of each method
+![](https://i.imgur.com/QISoj20.png)
+
+**********************************************************************************************
+
+Now we have polished our dataset but we still need to shortlist most relevent features for our ML Model
+
 ## Some commong techniques are:
+
 1. Categorical Encoding - Converting categorical values into numerics, using one-hot encoding.
 2. Feature Engineering - Select most relevent features for ML Model.
 3. Handling Missing Values - Removing missing or duplicate data. 
