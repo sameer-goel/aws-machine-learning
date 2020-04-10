@@ -108,13 +108,17 @@ Use transform() for Test and Validation
 ### Classificaiton Models
 1. 
 - **Accuracy:** The percent (ratio) of cases classified correctly.
+
 - **Precision:** Accuracy of a predicted positive outcome in percent.
-- **f1_score:** It is a combined metric. Harmonic mean of percision and recall.
-
-|TP + TN|
-=========
-|TP+TN+FP+FN|
-
-
 - **Recall:** Measure the strength of the model to predict a positive outcome.
+- **f1_score:** It is a combined metric. Harmonic mean of percision and recall.
+`0(𝑏𝑎𝑑)≤f1_score≤1(good)`
+
 - **Specificity:** Measure the strength of the model to predict a negetive outcome.
+
+| Accuracy  | Precision | Recall | f1 score | Specificity |
+|-----------|-----------|--------|----------|-------------|
+|TP + TN    |    TP     |   TP   |2(Pre*Rec)|   TN        |
+|TP+TN+FP+FN|  TP+FP    | TP+FN  | (Pre+Rec)| TN+FP       |
+
+
