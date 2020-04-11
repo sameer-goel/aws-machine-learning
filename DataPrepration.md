@@ -96,6 +96,10 @@ TriGram - "hip hip hurrey"
 Used to filter out not importnt common words
 <img src="https://i.imgur.com/ZwjMTvz.png" width="800" />
 
+**Example:** A term frequency–inverse document frequency (tf–idf) matrix using both unigrams and bigrams is built from a text corpus consisting of the following two sentences: { Hello world } and { Hello how are you }. What are the dimensions of the tf–idf vector/matrix? 
+
+**Sol:**There are 2 sentences (or corpus data we are vectorizing) with 5 unique unigrams ('are', 'hello', 'how', 'world', 'you') and there are 4 unique bigrams ('are you', 'hello how', 'hello world', 'how are'). So the vectorized matrix would be (2, 9). 
+
 ### Use-case of each method
 ![](https://i.imgur.com/QISoj20.png)
 
