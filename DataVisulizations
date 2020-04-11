@@ -1,0 +1,17 @@
+Type of Data Visulaization and information provided
+
+## Scatter Plots for correlation of 2 values | 2 Value along x,y
+Size of home vs price
+<img src="https://i.imgur.com/o8q1bhY.png" height="300" />
+
+## Bubble Plots for correlation of 3 values, 3 value as bubble size | 3 Value along x,y
+Size vs price vs age
+<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fdocs.oracle.com%2Fmiddleware%2F1213%2Fadf%2Ftag-reference-dvt%2Ftagdoc%2Fdvt_bubbleChart.html&psig=AOvVaw3_4oGqZvrtJBgj9S7wgjdY&ust=1586684199638000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNDYxrSJ4OgCFQAAAAAdAAAAABAD" height="300" />
+
+## Bar charts for showing descrete magnituge of values vs attribute on either x or y
+day vs traffic
+<img src="https://chartio.com/assets/24e451/tutorials/charts/grouped-bar-charts/c1fde6017511bbef7ba9bb245a113c07f8ff32173a7c0d742a4e1eac1930a3c5/grouped-bar-example-1.png" height="300" />
+
+
+## Line chart for showing continues magitude of values vs attribute for a period of time.
+<img src="https://i.imgur.com/Oy0MO1s.png" height="300" />
