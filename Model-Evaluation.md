@@ -1,6 +1,6 @@
 ## Model Evaluation
 
-https://i.imgur.com/us6Fw9U.png
+<img src="https://i.imgur.com/GI0pLVK.png" height="300" />
 
 ****************************************************
 ### Regression Models
