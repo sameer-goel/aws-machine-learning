@@ -13,10 +13,13 @@
 <img src="https://i.imgur.com/GdZl9PW.png" height="300" />
 
 Training
+
 <img src="https://i.imgur.com/GdZl9PW.png" height="300" />
 
 BYOM
+
 <img src="https://i.imgur.com/k5kM1WO.png" height="300" />
  
  Inference
+
 <img src="https://i.imgur.com/k5kM1WO.png" height="300" />
