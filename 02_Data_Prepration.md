@@ -157,7 +157,7 @@ Even further for many classes: Averaging the target value for each category. The
 1. File : Load from S3, CSV, JSON, Parquet, png, jpg
 2. Pipe : Stream from S3, recordIO-protobuf
 
-## Data Split
+## Randomize and Split
 <img src="https://i.imgur.com/zUcDON7.png" height="300" />
 
 **********************************************************************

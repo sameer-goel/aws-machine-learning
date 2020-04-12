@@ -1,5 +1,8 @@
 ## Model Evaluation
 
+https://i.imgur.com/us6Fw9U.png
+
+****************************************************
 ### Regression Models
 1. Underfitting: - Model is not good enough to predict.
 2. Overfitting: - Model memorizes and too much inclined with existing data. Predicting New unseen data will be a challange.
