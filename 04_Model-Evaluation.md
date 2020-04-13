@@ -2,13 +2,19 @@
 
 <img src="https://i.imgur.com/GI0pLVK.png" height="300" />
 
+## Offline Validation
+Both k-fold and backtesting with historic data are offline validation methods
+
+## Online Validation
+with real world data
+
 ****************************************************
 ### Regression Models
 1. Underfitting: - Model is not good enough to predict.
-How to resolve: More Data, Train Longer
+How to resolve: More Data, __Train Longer__, Add more features to dataset
 
 2. Overfitting: - Model memorizes and too much inclined with existing data. Predicting New unseen data will be a challange.
-How to resolve: Early stop based on fit threshhold, More data, Sprinkle in some noise, regularization (data points smoothening), ensemble (combine models together), Drop some features.
+How to resolve: __Early stop__ based on fit threshhold, More data, Sprinkle in some noise, regularization (data points smoothening), ensemble (combine models together), Drop some features.
 
 ### Residual Distribution | should be centerd to zero.
 - if cetered around negetive value: prediction is too high
@@ -56,3 +62,15 @@ How to resolve: Early stop based on fit threshhold, More data, Sprinkle in some 
 
 ## We can define what to send to clooudwatch
 <img src="https://i.imgur.com/Q102ave.png" height="300" />
+
+*************************************************************************************
+
+Tips:
+
+Q. If loss funciton is settling on a similar value, how to imporve model
+A. A learning rate can be too large that it cannot find the the true global minimum. Decreasing the learning rate allows the training process to find lower loss function floors but it can also increase the time needed for convergence.
+
+Q. Linear Learner model should be tuned on?
+A. AWS recommends tuning the model against a validation metric instead of a training metric. 
+
+
