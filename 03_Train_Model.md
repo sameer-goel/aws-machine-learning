@@ -99,4 +99,4 @@ Example - DeepRacer
 - Example: what price to ask for a house or car or phone?
     - CART Classificaitona and Regression Tress based on Locaiotn, Age, Size, rooms, walk score, climate etc.
 
-Scenarios- Ranking, Fraud Detection
+Scenarios- Ranking on an e-commerce website, Fraud Detection
