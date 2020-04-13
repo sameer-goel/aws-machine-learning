@@ -5,7 +5,12 @@
 ****************************************************
 ### Regression Models
 1. Underfitting: - Model is not good enough to predict.
+How to resolve: More Data, Train Longer
+
 2. Overfitting: - Model memorizes and too much inclined with existing data. Predicting New unseen data will be a challange.
+How to resolve: Early stop based on fit threshhold, More data, Sprinkle in some noise, regularization (data points smoothening), ensemble (combine models together), Drop some features.
+
+<img src="https://i.imgur.com/v1iorkD.png" height="300" />
 
 <img src="https://i.imgur.com/iPUUP55.png" height="300" />
 
@@ -26,3 +31,15 @@
 |:---------:|:---------:|:------:|:--------:|:-----------:|
 |TP + TN    |    TP     |   TP   |2(Pre*Rec)|   TN        |
 |TP+TN+FP+FN|  TP+FP    | TP+FN  | (Pre+Rec)| TN+FP       |
+
+*************************************************************************************
+# AWS Advantage
+
+## Provide clear tags of Test and Validation
+<img src="https://i.imgur.com/c8IRiil.png" height="300" />
+
+## Cloudwatch graph can help to plot accuracy 
+<img src="https://i.imgur.com/0CPxT8n.png" height="300" />
+
+## We can define what to send to clooudwatch
+<img src="https://i.imgur.com/Q102ave.png" height="300" />
