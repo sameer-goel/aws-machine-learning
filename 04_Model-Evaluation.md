@@ -32,8 +32,8 @@ How to resolve: __Early stop__ based on fit threshhold, More data, Sprinkle in s
 
 - **Accuracy:** The percent (ratio) of cases classified correctly.
 
-- **Precision:** Accuracy of a predicted positive outcome in percent. | Fraud Detection
-- **Recall:** Measure the strength of the model to predict a positive outcome. | Spam Checker
+- **Precision:** Accuracy of a predicted positive outcome in percent.| reduce false negetive | Fraud Detection
+- **Recall:** Measure the strength of the model to predict a positive outcome. | reduce false negetive | Spam Checker, Anomaly detection
 - **f1_score:** It is a combined metric. Harmonic mean of percision and recall.
 **0(𝑏𝑎𝑑)≤f1_score≤1(good)**
 
@@ -43,6 +43,8 @@ How to resolve: __Early stop__ based on fit threshhold, More data, Sprinkle in s
 |:---------:|:---------:|:------:|:--------:|:-----------:|
 |TP + TN    |    TP     |   TP   |2(Pre*Rec)|   TN        |
 |TP+TN+FP+FN|  TP+FP    | TP+FN  | (Pre+Rec)| TN+FP       |
+
+<img src="https://miro.medium.com/max/908/1*t_t7cMq3FGqDk6gbwfA4EA.png" height="300" />
 
 #### AUC Graph by aws
 <img src="https://i.imgur.com/c2XcKeg.png" height="300" />

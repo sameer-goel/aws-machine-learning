@@ -38,7 +38,11 @@ Tip: Multi-collinearity
 ************************************************************************************
 
 Now we have understood the data, lets work on making this dataset Cleaned
-## Step 2: Tyding the data
+## Step 2: Tyding the data, solving data imbalance to avoid model bias
+
+Down Sampling, Up Sampling, Data Augmentation, Up/down Weights.
+<img src="https://i.imgur.com/MsaYUDT.png" height="300" />
+
 
 ## 1. Imputing Missing Values
 * Average imputation: Replaces missing values with the **average/mean** value in the column. Useful for **numeric** variables. 
