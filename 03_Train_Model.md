@@ -106,3 +106,7 @@ Example - DeepRacer
     - CART Classificaitona and Regression Tress based on Locaiotn, Age, Size, rooms, walk score, climate etc.
 
 Scenarios- Ranking on an e-commerce website, Fraud Detection
+
+**********************************************************************************************
+## Tree Based Models
+
