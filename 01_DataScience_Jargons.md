@@ -1,8 +1,7 @@
 ## Data Jargons
 
-1. Ordinal vs Nominal: Order of values matters in Ordinal and in Nominal not.
-2. To run unsupervised learning algorithms that don't have a target, specify the number of label columns in the content type. For example, in this case 'text/csv;label_size=0'
-
+- Ordinal vs Nominal: Order of values matters in Ordinal and in Nominal not.
+- To run unsupervised learning algorithms that don't have a target, specify the number of label columns in the content type. For example, in this case 'text/csv;label_size=0'
 
 ## System Cofiguration
 3. GPU - Flexible to configure, Affordable, fast for general ML

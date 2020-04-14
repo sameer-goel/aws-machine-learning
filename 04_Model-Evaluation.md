@@ -66,7 +66,7 @@ How to resolve: __Early stop__ based on fit threshhold, More data, Sprinkle in s
 
 *************************************************************************************
 
-Tips:
+__Tips:__
 
 Q. If loss funciton is settling on a similar value, how to imporve model
 A. A learning rate can be too large that it cannot find the the true global minimum. Decreasing the learning rate allows the training process to find lower loss function floors but it can also increase the time needed for convergence.
