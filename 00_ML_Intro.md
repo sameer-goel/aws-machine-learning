@@ -10,6 +10,3 @@
 |![](https://i.imgur.com/E0eqwG3.png)|![](https://i.imgur.com/rPZqT3d.png)|
 |Recommendation | Ranking |
 |![](https://i.imgur.com/HJfxaoM.png)|![](https://i.imgur.com/99DE4ua.png)|
-
-<img src="https://i.imgur.com/KjjyT4G.png" width="100" />
-<img src="https://i.imgur.com/nQ7LwAv.png" width="100" />

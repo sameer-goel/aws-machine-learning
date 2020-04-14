@@ -32,8 +32,8 @@ How to resolve: __Early stop__ based on fit threshhold, More data, Sprinkle in s
 
 - **Accuracy:** The percent (ratio) of cases classified correctly.
 
-- **Precision:** Accuracy of a predicted positive outcome in percent.| reduce false negetive | Fraud Detection
-- **Recall:** Measure the strength of the model to predict a positive outcome. | reduce false negetive | Spam Checker, Anomaly detection
+- **Precision:** Accuracy of a predicted positive outcome in percent.| reduce false +ve | Spam Checker, Anomaly detection
+- **Recall:** Measure the strength of the model to predict a positive outcome. | reduce false -ve | Fraud Detection
 - **f1_score:** It is a combined metric. Harmonic mean of percision and recall.
 **0(𝑏𝑎𝑑)≤f1_score≤1(good)**
 
