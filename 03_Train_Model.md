@@ -98,7 +98,7 @@ Example - DeepRacer
 - Amazon DeepAR Lib for timeseries forecasting
 
 **********************************************************************************************
-## Ensemble Training | XGBoost
+## Ensemble Training | Bagging | XGBoost, AdaBoost
 - Kinda swiss army knife for many regression, classification and ranking problems.
 - Momory instance.
 
@@ -109,4 +109,11 @@ Scenarios- Ranking on an e-commerce website, Fraud Detection
 
 **********************************************************************************************
 ## Tree Based Models
+
+### 1. Decision trees
+### 2. Ensemble Methods 
+#### 2.1 Random Foreset Bagging - Bootstrap Aggregating - Parallel Tree - Avoid underfitting
+#### 2.2 Random Foreset Bagging - Boosting - Sequential - Avoid overfitting
+Learn from previous
+
 

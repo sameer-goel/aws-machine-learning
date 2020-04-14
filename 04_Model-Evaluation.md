@@ -75,3 +75,11 @@ Q. Linear Learner model should be tuned on?
 A. AWS recommends tuning the model against a validation metric instead of a training metric. 
 
 
+***********
+### Linear Regression
+Best fitting line
+`y=w_0+w_1 x`
+
+### Log-loss (Binary Cross-Entropy)
+Check peformance of binary classifier
+`LogLoss=−(y∗log(p)+(1−y)∗log⁡(1−p))`
