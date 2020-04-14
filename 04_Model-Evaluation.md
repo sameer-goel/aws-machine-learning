@@ -48,7 +48,6 @@ How to resolve: __Early stop__ based on fit threshhold, More data, Sprinkle in s
 
 #### AUC Graph by aws
 <img src="https://i.imgur.com/c2XcKeg.png" height="300" />
-<img src="https://i.imgur.com/HXz6Rgd.png" height="300" />
 
 ### Multiclass Classification
 <img src="https://i.imgur.com/HXz6Rgd.png" height="300" />
