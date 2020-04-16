@@ -15,4 +15,4 @@
 
 <img src="images/deeplearning.gif" height="300" />
 
-![](/images/deeplearning.mp4)
+![deeplearning](/images/deeplearning.mp4)
