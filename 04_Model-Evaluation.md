@@ -9,7 +9,7 @@ Both k-fold and backtesting with historic data are offline validation methods
 with real world data
 
 ****************************************************
-### Regression Models
+## Regression Models
 1. Underfitting: - Model is not good enough to predict.
 How to resolve: More Data, __Train Longer__, Add more features to dataset
 
@@ -26,7 +26,13 @@ How to resolve: __Early stop__ based on fit threshhold, More data, Sprinkle in s
 
 <img src="https://i.imgur.com/btT4DUz.png" height="300" />
 
-### Binary Classificaiton Models
+### Gradient Descent
+|![](https://i.imgur.com/Vaw5vuC.png)|![]()|
+
+Step should not be too large (miss ninimum) or too small (take longer)
+<img src="https://i.imgur.com/gBpuE6A.png" height="300" />
+
+## Binary Classificaiton Models
 
 <img src="https://secureservercdn.net/198.71.233.197/l87.de8.myftpupload.com/wp-content/uploads/2016/09/table-blog.png" height="300" />
 
