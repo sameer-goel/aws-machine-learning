@@ -13,7 +13,6 @@
 
 <img src="https://i.imgur.com/rsxmO3Z.png" height="300" />
 
-
 <img src="images/deeplearning.gif" height="300" />
 
 <img src="images/deeplearning.mp4" height="300" />
