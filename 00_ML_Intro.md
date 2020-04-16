@@ -11,8 +11,8 @@
 |Recommendation | Ranking |
 |![](https://i.imgur.com/HJfxaoM.png)|![](https://i.imgur.com/99DE4ua.png)|
 
+## Machine Learning
 <img src="https://i.imgur.com/rsxmO3Z.png" height="300" />
 
+## Deep Learning
 <img src="images/deeplearning.gif" height="300" />
-
-![deeplearning](/images/deeplearning.mp4)
