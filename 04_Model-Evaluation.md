@@ -9,7 +9,8 @@ Both k-fold and backtesting with historic data are offline validation methods
 with real world data
 
 ****************************************************
-## Regression Models
+## Regression Models, look for generalization
+
 1. Underfitting: - Model is not good enough to predict.
 How to resolve: More Data, __Train Longer__, Add more features to dataset
 

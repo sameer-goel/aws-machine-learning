@@ -118,19 +118,21 @@ Separate Year, Month, Date, Day, Hour, Min, Sec, MilSec
 <img src="https://i.imgur.com/4nuUtEI.png" width="600" />
 
 **********************************************************************************************
-## Step 3: Feature Selection
+## Step 3: Feature Selection (Reduce) and Engineering New Feature
 
-Feature engineering:Using domain and data knowledge to create novel featuresas inputs for ML models often more art than science.
+Feature selection:Using domain and data knowledge to create novel featuresas inputs for ML models often more art than science.
 
 Some rules of thumb
 - Use intuition: “What information would a humanuse to predict?”
-- Try generating many features, then apply dimensionality reduction if needed§Consider transformations of attributes (e.g., squaring)
-- Consider combinations of attributes (e.g., multiplication)
-- Do not overthink or include too much manual logic
+- Try generating many features, then apply dimensionality reduction if needed
 - **scikit-learn:sklearn.feature_extraction**
+- Converting timestamp column into Day, Hour, Min
+- Consider transformations of attributes (e.g., squaring)
+- Consider combinations of attributes (e.g., multiplication)
 
 ### PCA: Principle component analysis
-Unsupervised learning alogorithm to reduce number of feature but still retain info.
+Unsupervised learning alogorithm to reduce number of feature depending on correlation but still retain info.
+
 
 
 **********************************************************************************************
