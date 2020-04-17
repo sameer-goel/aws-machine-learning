@@ -20,6 +20,10 @@ Most important and time consuming process of Data Science like Tex cleaning, Mis
 * Multivariate statistics (more than one variable)
     * Correlation, Contingency Tables
 
+#### Handle Unbalanced Data
+- SMOTE Synthetic Minority Oversampling Technique
+- Sythesize data
+
 #### Correlation
 * Correlations: How strongly pairs of attributes are related.
 * **Scatterplot** matrices visualize attribute-target and attribute-attribute pairwise relationships.
@@ -139,7 +143,8 @@ Unsupervised learning alogorithm to reduce number of feature depending on correl
 **********************************************************************************************
 
 Now we have Cleaned and Sorted data, clean data is good to read by human but machine models might have to encode those values.
- ## Step 4: Encoding and Data Transformation
+
+## Step 4: Encoding and Data Transformation
 
 ## Categorical Encoding
 

@@ -11,9 +11,8 @@
 ### In Regression
 <img src="https://i.imgur.com/EFo6Mi6.png" height="300" />
 
-### In Classification
-To find local minimum and then global minimum
-<img src="https://i.imgur.com/iWvbhX5.png" height="300" />
+### Support Vector Machine
+<img src="https://i.imgur.com/qjXfzl3.png" height="300" />
 
 ## Factorization Machine | Sparse data (with missing values)
 - considers only pair-wise features
@@ -25,8 +24,30 @@ To find local minimum and then global minimum
 - better work on CPU
 
 Example: ClickStream ads data, movie recommendation
+___________________
+### In Classification
+To find local minimum and then global minimum
+<img src="https://i.imgur.com/iWvbhX5.png" height="300" />
 
-# Unsupervised
+## Decision Trees | also does feature selection in the process
+<img src="https://i.imgur.com/z7IAV9q.png" height="300" />
+
+### Random Forest | Collection of Decision Trees
+<img src="https://i.imgur.com/X9IMY6B.png" height="300" />
+____________________
+
+### Classification K-Nearest Neighbor | user does not even defines identifying attributes
+- predict value or classification to closest (avg value of nearest neighbour)
+- KNN is lazy and momorizes
+- kind of sterotyping
+
+Example - Credit ratings, product recommendations for similar items
+
+<img src="https://i.imgur.com/vYHuAjg.png" height="300" />
+
+*******************************************************************************************
+
+# Unsupervised Classification
  
 ## Clustering K-Means | user defines identifying attribute
 - Tabular data as input
@@ -35,17 +56,10 @@ Example: ClickStream ads data, movie recommendation
 
 Example - analog to digital high and low as 0,1 , handwriting recognition black/white pixel as 0,1
 
-**********************************************************************************************
+<img src="https://i.imgur.com/C3GKbNo.png" height="300" />
 
-## Classification K-Nearest Neighbor | user does not even defines identifying attributes
-- predict value or classification to closest (avg value of nearest neighbour)
-- KNN is lazy and momorizes
-- kind of sterotyping
-
-Example - Credit ratings, product recommendations for similar items
-
-### AWS Image Algorithms
-<img src="https://i.imgur.com/xpqNKQF.png" height="300" />
+Elbow Plot, varaition does not chage from this point
+<img src="https://i.imgur.com/VJh9R8J.png" height="300" />
 
 **********************************************************************************************
 # Anomaly Detection
@@ -56,11 +70,14 @@ Example - Credit ratings, product recommendations for similar items
 Example: Fraud Detection, IP Insights, Quality Control
 
 **********************************************************************************************
-# Text Analysis
+# AWS Image Algorithms
 
-## LDA - Latent Dirichlet Allocation
+<img src="https://i.imgur.com/xpqNKQF.png" height="300" />
+
+## LDA - Latent Dirichlet Allocation | UnSu | Classification  
+__Example: Recommendation article, Musical Influence Artist, Topic Discovery, Automated Document tagging__
 - Similar documents based on frequency of simialar words
-Example: Recommendation article, Musical Influence Artist
+<img src="https://i.imgur.com/UEzK4b8.png" height="300" />
 
 ## NTM - Neural Topic Model
 - Perform topic modeling
@@ -111,4 +128,16 @@ Scenarios- Ranking on an e-commerce website, Fraud Detection
 #### 2.2 Random Foreset Bagging - Boosting - Sequential - Avoid overfitting
 Learn from previous
 
+**********************************************************************************************
+# Deep Learning Algorithms
 
+## Neural Networks | Sup | Classification
+Bias: helps to not get deactivation of neuron having -ve x value upto certain threshold.
+<img src="https://i.imgur.com/VB4n0DF.png" height="300" />
+
+<img src="https://i.imgur.com/uyuRqV8.png" height="300" />
+
+## Convolutional Neural Networks CNN | Sup | Classification
+Example: Image classfication, spatial analysis, hotdog or not
+
+<img src="https://i.imgur.com/X4YLwlG.png" height="300" />
