@@ -133,8 +133,9 @@ Some rules of thumb
 ### PCA: Principle component analysis
 Unsupervised learning alogorithm to reduce number of feature depending on correlation but still retain info.
 
+<img src="https://lh3.googleusercontent.com/proxy/KA74hdQJjtqNTdL4hXshWggld95k8eRo-_-viWAnF6gigmgOabOUmu71uBfSjki8xNvcoGDQXK03b09qOFSXdA2wrWBWYjS2B7S2XvX8v_RwS-YPrm_JrZJtRLk1zEP4QUYGWDeX70u3N9c2mV_O-0p7mAW2HcnzZ43nUNqheV_gI_O5xbtf5s6YGDLFZynyPHpAtP4eULHif4bQi7oCcUBD" height="300" />
 
-
+<img src="http://tiny/1colz5eh0/lh3googproxKA74" height="300" />
 **********************************************************************************************
 
 Now we have Cleaned and Sorted data, clean data is good to read by human but machine models might have to encode those values.
