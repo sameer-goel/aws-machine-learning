@@ -58,13 +58,16 @@ reduce FP, Spam detector, Explicit Content Blog, Catch just Fish
 <img src="https://miro.medium.com/max/908/1*t_t7cMq3FGqDk6gbwfA4EA.png" height="300" />
 
 ## ROC/AUC
-
-
+<img src="https://i.imgur.com/UA95C7d.png" height="300" />
 
 #### AUC Graph by aws
 <img src="https://i.imgur.com/c2XcKeg.png" height="300" />
 
-### Multiclass Classification
+## Gini Impurity
+Look for Lowest Impurity
+<img src="https://i.imgur.com/MQPGZA6.png" height="300" />
+
+## Multiclass Classification
 <img src="https://i.imgur.com/HXz6Rgd.png" height="300" />
 
 *************************************************************************************
