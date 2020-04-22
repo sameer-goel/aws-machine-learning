@@ -141,3 +141,5 @@ Bias: helps to not get deactivation of neuron having -ve x value upto certain th
 Example: Image classfication, spatial analysis, hotdog or not
 
 <img src="https://i.imgur.com/X4YLwlG.png" height="300" />
+
+
