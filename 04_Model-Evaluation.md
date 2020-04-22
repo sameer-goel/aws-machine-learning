@@ -40,11 +40,15 @@ Step should not be too large (miss ninimum) or too small (take longer)
 - **Accuracy:** The percent (ratio) of cases classified correctly.
 
 - **Precision:** Accuracy of a predicted positive outcome in percent.| reduce false +ve | Spam Checker, Anomaly detection
-- **Recall:** Measure the strength of the model to predict a positive outcome. | reduce false -ve | Fraud Detection
+
+- **Recall/Sensitivity/TPR:** Measure the strength of the model to predict a positive outcome. | reduce false -ve (FN)
+Fraud Detection, Medical Digonistics, COVID19 Test
+
+- **Specificity/TNR:** Measure the strength of the model to predict a negetive outcome.
+reduce FP, Spam detector, Explicit Content Blog, Catch just Fish
+
 - **f1_score:** It is a combined metric. Harmonic mean of percision and recall.
 **0(𝑏𝑎𝑑)≤f1_score≤1(good)**
-
-- **Specificity:** Measure the strength of the model to predict a negetive outcome.
 
 | Accuracy  | Precision | Recall | f1 score | Specificity |
 |:---------:|:---------:|:------:|:--------:|:-----------:|
@@ -52,6 +56,10 @@ Step should not be too large (miss ninimum) or too small (take longer)
 |TP+TN+FP+FN|  TP+FP    | TP+FN  | (Pre+Rec)| TN+FP       |
 
 <img src="https://miro.medium.com/max/908/1*t_t7cMq3FGqDk6gbwfA4EA.png" height="300" />
+
+## ROC/AUC
+
+
 
 #### AUC Graph by aws
 <img src="https://i.imgur.com/c2XcKeg.png" height="300" />
