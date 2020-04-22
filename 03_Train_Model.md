@@ -140,6 +140,17 @@ Bias: helps to not get deactivation of neuron having -ve x value upto certain th
 ## Convolutional Neural Networks CNN | Sup | Classification
 Example: Image classfication, spatial analysis, hotdog or not
 
+Process image layer by layer over edge detetion filter or multiple other filters
 <img src="https://i.imgur.com/X4YLwlG.png" height="300" />
+
+## Recurrent Neural Netowrk | Sup | Other
+Example: Stock Prediction, Time Searies, Voice recognition (Seq2Seq), 
+PATTERN which says Start activity - following certain sequence - End activity
+
+<img src="https://i.imgur.com/YIWwPYI.png" height="300" />
+
+## LSTM | more memory than RNNs
+
+
 
 
