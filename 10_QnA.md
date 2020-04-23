@@ -11,7 +11,7 @@ RUN pip install sagemaker-containers
 COPY train.py /opt/ml/code/train.py
 
 # Defines train.py as script entry point
-ENV **SAGEMAKER_PROGRAM** train.py
+ENV SAGEMAKER_PROGRAM train.py
 
 ```
 
