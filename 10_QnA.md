@@ -43,9 +43,9 @@ Ref: https://github.com/aws/sagemaker-containers/blob/master/README.rst
 - Sequence-to-Sequence Algorithm - (Amazon Translate/Amazon Polly/Amazon Transcribe)
 - XGBoost Algorithm ----- (Amazon Fraud Detector)
 
-Amazon Polly - Text to Speech
-Amazon Transcribe - Speech to Text
-Amazon CodeGuru - code review
-Amazon Kendra - NLP powered search
-Amazon Lex - NLP bot
-
+Services:
+- Amazon Polly - Text to Speech
+- Amazon Transcribe - Speech to Text
+- Amazon CodeGuru - code review
+- Amazon Kendra - NLP powered search
+- Amazon Lex - NLP bot
