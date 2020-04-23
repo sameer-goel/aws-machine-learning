@@ -23,4 +23,46 @@ ENV SAGEMAKER_PROGRAM train.py
 
 Ref: https://github.com/aws/sagemaker-containers/blob/master/README.rst
 
-## 
+## [SageMaker Built-In Algorithms](https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html)
+
+- BlazingText Algorithm - NLP Sentiment Analysis (Amazon Comprehend)
+- DeepAR Forecasting Algorithm - RNN timeseries forecasting (Amazon Forecast)
+- Factorization Machines Algorithm - click rate patterns (Amazon Kinesis Data Analytics)
+- Image Classification Algorithm - multi-label classification (Amazon Rekognition)
+- IP Insights Algorithm - detect anomalous IP address (Amazon GuardDuty)
+- K-Means Algorithm - handwriting recognition black/white pixel as 0,1 (Amazon Textract)
+- K-Nearest Neighbors (k-NN) Algorithm - Credit ratings, product recommendations (Amazon Personalize)
+- Latent Dirichlet Allocation (LDA) Algorithm - Topic Modeling, product recommendations (Amazon Personalize)
+- Linear Learner Algorithm - 
+- Neural Topic Model (NTM) Algorithm
+- Object2Vec Algorithm
+- Object Detection Algorithm
+- Principal Component Analysis (PCA) Algorithm
+- Random Cut Forest (RCF) Algorithm
+- Semantic Segmentation Algorithm
+- Sequence-to-Sequence Algorithm
+- XGBoost Algorithm
+
+Amazon CodeGuru
+Amazon Fraud Detector
+Amazon Kendra
+Amazon Lex
+
+Amazon Polly
+Amazon Transcribe
+Amazon Translate
+
+## SageMaker Built-In Algorithms
+
+- BlazingText
+- Image classification algorithm
+- K-means algorithm
+- K-nearest neighbors (k-NN) algorithm
+- Latent Dirichlet allocation (LDA) algorithm
+- Linear learner algorithm
+- Object2Vec algorithm
+- Principal Component Analysis (PCA) algorithm
+- Random Cut Forest (RCF) algorithm
+- Sequence-to-Sequence algorithm
+- XGBoost algorithm
+
