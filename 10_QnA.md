@@ -28,6 +28,7 @@ Ref: https://github.com/aws/sagemaker-containers/blob/master/README.rst
 - BlazingText Algorithm - Semantically similar words, NLP Sentiment Analysis (Amazon Comprehend)
 - Object2Vec Algorithm - find semantically similar objects such as questions
 - Neural Topic Model (NTM) Algorithm - Topic Modeling
+- Latent Dirichlet Allocation (LDA) Algorithm - Topic Modeling, product recommendations (Amazon Personalize)
 
 - DeepAR Forecasting Algorithm - RNN timeseries forecasting (Amazon Forecast)
 - Factorization Machines Algorithm - click rate patterns (Amazon Kinesis Data Analytics)
@@ -35,7 +36,6 @@ Ref: https://github.com/aws/sagemaker-containers/blob/master/README.rst
 - IP Insights Algorithm - detect anomalous IP address (Amazon GuardDuty)
 - K-Means Algorithm - handwriting recognition black/white pixel as 0,1 (Amazon Textract)
 - K-Nearest Neighbors (k-NN) Algorithm - Credit ratings, product recommendations (Amazon Personalize)
-- Latent Dirichlet Allocation (LDA) Algorithm - Topic Modeling, product recommendations (Amazon Personalize)
 - Linear Learner Algorithm - either classification or regression problems
 - Object Detection Algorithm - (Object Detection)
 - Principal Component Analysis (PCA) Algorithm - Dimention Reduction
@@ -51,7 +51,42 @@ Services:
 - Amazon Kendra - NLP powered search
 - Amazon Lex - NLP bot
 
+# QnA
 
-## Identify SageMaker supervised learning algorithms that are memory bound
+Q. Identify SageMaker supervised learning algorithms that are memory bound
+- 
 
-## Sagemkaer algorithms that can be parallelized
+Q. Sagemkaer algorithms that can be parallelized
+- 
+
+Q. Algorithms that can be supervised and unsupervised
+- 
+
+Q. algorithm that can be used both as a built-in-algorithm as well as a framework such as Tensorflow
+- 
+
+Q. To get inference for an entire dataset, you are developing a batch transform job using Amazon SageMaker High-level Python Library. Which method would you call so that the inferences are available for the entire dataset
+- 
+
+Q. Method calls you need to use to deploy the model
+- 
+
+Q. Visual Types
+- Stock Price 
+
+Q. activation function and their USEs
+- Softmax
+- Sigmoid
+- RELU
+- Tanh
+
+Q. Kinesis Shard cound calculation
+
+Q. Which PCA mode to use
+- Regular - sparse data and a moderate number of observations and features. 
+- Randomized - large number of observations and features.
+
+Q. SageMaker algorithms support only the recordIO-protobuf file type for training data
+- 
+
+Q. Standardization vs Normalization vs Log Transformation
