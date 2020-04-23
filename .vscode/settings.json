@@ -1,4 +1,8 @@
 {
     "markdown.extension.preview.autoShowPreviewToSide": true,
-    "markdown.extension.italic.indicator": "_"
+    "markdown.extension.italic.indicator": "_",
+    "markdown.preview.scrollPreviewWithEditor": false,
+    "markdown.preview.scrollEditorWithPreview": false,
+    "markdown.preview.markEditorSelection": false,
+    "markdown.preview.doubleClickToSwitchToEditor": false
 }

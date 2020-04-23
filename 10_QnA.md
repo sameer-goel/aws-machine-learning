@@ -33,36 +33,19 @@ Ref: https://github.com/aws/sagemaker-containers/blob/master/README.rst
 - K-Means Algorithm - handwriting recognition black/white pixel as 0,1 (Amazon Textract)
 - K-Nearest Neighbors (k-NN) Algorithm - Credit ratings, product recommendations (Amazon Personalize)
 - Latent Dirichlet Allocation (LDA) Algorithm - Topic Modeling, product recommendations (Amazon Personalize)
-- Linear Learner Algorithm - 
-- Neural Topic Model (NTM) Algorithm
-- Object2Vec Algorithm
-- Object Detection Algorithm
-- Principal Component Analysis (PCA) Algorithm
-- Random Cut Forest (RCF) Algorithm
-- Semantic Segmentation Algorithm
-- Sequence-to-Sequence Algorithm
-- XGBoost Algorithm
+- Linear Learner Algorithm - either classification or regression problems
+- Neural Topic Model (NTM) Algorithm - Topic Modeling
+- Object2Vec Algorithm - 
+- Object Detection Algorithm - (Object Detection)
+- Principal Component Analysis (PCA) Algorithm - Dimention Reduction
+- Random Cut Forest (RCF) Algorithm - (Amazon Kinesis Data Analytics)
+- Semantic Segmentation Algorithm -  (Object Detection)
+- Sequence-to-Sequence Algorithm - (Amazon Translate/Amazon Polly/Amazon Transcribe)
+- XGBoost Algorithm ----- (Amazon Fraud Detector)
 
-Amazon CodeGuru
-Amazon Fraud Detector
-Amazon Kendra
-Amazon Lex
-
-Amazon Polly
-Amazon Transcribe
-Amazon Translate
-
-## SageMaker Built-In Algorithms
-
-- BlazingText
-- Image classification algorithm
-- K-means algorithm
-- K-nearest neighbors (k-NN) algorithm
-- Latent Dirichlet allocation (LDA) algorithm
-- Linear learner algorithm
-- Object2Vec algorithm
-- Principal Component Analysis (PCA) algorithm
-- Random Cut Forest (RCF) algorithm
-- Sequence-to-Sequence algorithm
-- XGBoost algorithm
+Amazon Polly - Text to Speech
+Amazon Transcribe - Speech to Text
+Amazon CodeGuru - code review
+Amazon Kendra - NLP powered search
+Amazon Lex - NLP bot
 
