@@ -25,7 +25,10 @@ Ref: https://github.com/aws/sagemaker-containers/blob/master/README.rst
 
 ## [SageMaker Built-In Algorithms](https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html)
 
-- BlazingText Algorithm - NLP Sentiment Analysis (Amazon Comprehend)
+- BlazingText Algorithm - Semantically similar words, NLP Sentiment Analysis (Amazon Comprehend)
+- Object2Vec Algorithm - find semantically similar objects such as questions
+- Neural Topic Model (NTM) Algorithm - Topic Modeling
+
 - DeepAR Forecasting Algorithm - RNN timeseries forecasting (Amazon Forecast)
 - Factorization Machines Algorithm - click rate patterns (Amazon Kinesis Data Analytics)
 - Image Classification Algorithm - multi-label classification (Amazon Rekognition)
@@ -34,8 +37,6 @@ Ref: https://github.com/aws/sagemaker-containers/blob/master/README.rst
 - K-Nearest Neighbors (k-NN) Algorithm - Credit ratings, product recommendations (Amazon Personalize)
 - Latent Dirichlet Allocation (LDA) Algorithm - Topic Modeling, product recommendations (Amazon Personalize)
 - Linear Learner Algorithm - either classification or regression problems
-- Neural Topic Model (NTM) Algorithm - Topic Modeling
-- Object2Vec Algorithm - 
 - Object Detection Algorithm - (Object Detection)
 - Principal Component Analysis (PCA) Algorithm - Dimention Reduction
 - Random Cut Forest (RCF) Algorithm - (Amazon Kinesis Data Analytics)
@@ -49,3 +50,8 @@ Services:
 - Amazon CodeGuru - code review
 - Amazon Kendra - NLP powered search
 - Amazon Lex - NLP bot
+
+
+## Identify SageMaker supervised learning algorithms that are memory bound
+
+## Sagemkaer algorithms that can be parallelized
