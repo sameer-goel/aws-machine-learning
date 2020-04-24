@@ -66,7 +66,7 @@ Standardization (also called z-score normalization) transforms your data such th
 
 ### Scaling
 In scaling (also called min-max scaling), you transform the data such that the features are within a specific range e.g. [0, 1].
-<img src="https://i.imgur.com/tpEqnnB.png" height="200" />
+<img src="https://i.imgur.com/tpEqnnB.png" height="300" />
 
 # QnA
 
