@@ -60,7 +60,7 @@ Services:
 - Amazon Kendra - NLP powered search
 - Amazon Lex - NLP bot
 
-## Questions on Data Prep
+## Questions on Data Prep and Exploratory analysis
 
 Q. 20% Numeric Data is missing
 - Regression imputation
@@ -69,21 +69,52 @@ Q. 20% Numeric Data is missing
 Q. Classify good and bad sentences using LSTM
 - Vectorize sentenses -> Tarform them to NUMERIC with PADDING -> Use sentences as input
 
-## Questions Feature Selection and Engineering
+Q. correlation between variable is -.9
+- inversly propotional
 
-### Standardization
+__Q. Standardization__
 Standardization (also called z-score normalization) transforms your data such that the resulting distribution has a mean of 0 and a standard deviation of 1.
 <img src="https://i.imgur.com/GHwOoVO.gif" height="300" />
 
-### Scaling
+__Q. Scaling__
 In scaling (also called min-max scaling), you transform the data such that the features are within a specific range e.g. [0, 1].
 <img src="https://i.imgur.com/tpEqnnB.png" height="300" />
 
-### PCA and t-SNE Automatic feature extraction
+__Q. PCA and t-SNE Automatic feature extraction__
 PCA is for linear models
 t-SNE for non-linear models
 
-# QnA
+## Questions on Modeling
+
+Q. 
+
+
+
+## Questions on Lienar learner Hyperparameter
+
+Q. __Loss__ when predictor_type for XGBoost
+1. __regressor__, auto, squared_loss, absolute_loss, eps_insensitive_squared_loss, eps_insensitive_absolute_loss, quantile_loss, and huber_loss.
+2. __binary_classifier__, auto,logistic, and hinge_loss.
+3. __multiclass_classifier__, auto and softmax_loss
+
+Q. Model Evaluation when __predictor_type__ is set to __binary_classifier__
+- __accuracy__ — The model with the highest accuracy.
+- __f_beta__ —The model with the highest F1 score. The default is F1.
+- __precision_at_target_recall__ —The model with the highest precision at a given recall target.
+- __recall_at_target_precision__ —The model with the highest recall at a given precision target.
+- __loss_function__ —The model with the lowest value of the loss function used in training.
+
+Q. Parameters and Default values
+1. __normalize_label__ auto(only regression), true, or false | [-1,0,1]
+2. __normalize_data__ auto, true, false | [-1,0,1]
+3. __num_point_for_scaler__ (10,000) | number of data points to use for calculating normalization
+4. __mini_batch_size__ (1000) | number of observations per mini-batch for the data iterator
+5. __learning_rate__ (auto) | step size used by the optimizer for parameter updates.
+6. __epochs__ (15)| The maximum number of passes over the training data.
+7. __num_calibration_samples__ (auto) | number of observations from the validation dataset to use for model calibration
+8. __early_stopping_tolerance__ 0.001 | relative tolerance to measure an improvement in loss
+9. __target_precision__ (0.8) |  If binary_classifier_model_selection_criteria is recall_at_target_precision
+10. __target_recall__ (0.8) |If binary_classifier_model_selection_criteria is recall_at_target_recall
 
 Q. Model is getting overtrained
 - 
