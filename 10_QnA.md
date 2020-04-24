@@ -127,6 +127,10 @@ Q. Common hyperparameters
 - Dropout
 - Learning Rate
 
+Q. Image data set classification Model is taking too long to converge for more than 10 epochs
+- Normalize images before training
+- Add batch normalization
+
 Q. __Loss__ when predictor_type for XGBoost
 1. __regressor__, auto, squared_loss, absolute_loss, eps_insensitive_squared_loss, eps_insensitive_absolute_loss, quantile_loss, and huber_loss.
 2. __binary_classifier__, auto,logistic, and hinge_loss.
@@ -232,4 +236,31 @@ Q. SageMaker support Regression vs Classification
 
 
 
-Q. 
+## Security
+
+Q. S3 encryption options
+- SSE-S3 - S3 manages key
+- SSE-CMK - Cusomter manages key
+- SSE-KMS - AWS manage data key, you manage master key
+
+Q. SageMaker access security
+- IAM roles having policies and conditional keys
+- IAM Fedration
+- Inside VPC, access only via PrivateLink
+
+Q. SageMaker KMS Encryption options at Rest
+- Notebooks
+- Training Jobs
+- SageMaker Endpoint
+- S3 location for Trained Models
+
+Q. SageMaker Encryption options in Transit
+- Notebooks
+- Training Jobs
+- InterfaceEndpoint 
+- Limited by Security group rule
+
+- TLS 1.2 for Data in transit
+
+Q. SageMaker Audit
+- CloudTrail
