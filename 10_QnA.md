@@ -60,9 +60,12 @@ Services:
 - Amazon Kendra - NLP powered search
 - Amazon Lex - NLP bot
 
+### Standardization
+<img src="https://i.imgur.com/GHwOoVO.gif" height="300" />
+
 # QnA
 
-## Q. Model is getting overtrained
+Q. Model is getting overtrained
 - 
 
 Q. Loss function converges to different but stable values ,during multiple runs with identicle parameter 
@@ -70,6 +73,13 @@ Q. Loss function converges to different but stable values ,during multiple runs 
 
 Q. Data set is uneven for fraud Detection dataset
 - SMOTE
+
+Q. Common scaling techniques
+- Mean/variance standardization [-1,0,1]
+- MinMax [0,1]
+- Maxabs
+- Robust
+- Normalizer
 
 Q. Identify SageMaker supervised learning algorithms that are memory bound
 - KNN, XGBoost
