@@ -16,3 +16,11 @@ __Two__ Create Endpoint config
 2. ML compute instance for hosting model
 
 __Three__ Create Endpoint 
+
+## How to serve two result from 2 models
+- API gatway -> Lambda -> fetch multiple results
+
+## Where to check error if Training job if implemnted by pipeline
+- DescribeJob API
+- CloudWatch
+- Console DOEST NOT HELP here
