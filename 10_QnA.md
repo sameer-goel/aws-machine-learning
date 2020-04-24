@@ -28,25 +28,28 @@ Ref: https://github.com/aws/sagemaker-containers/blob/master/README.rst
 
 ## [SageMaker Built-In Algorithms](https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html)
 
+### NLP
 - BlazingText Algorithm - Semantically similar words, NLP Sentiment Analysis (Amazon Comprehend)
 - Object2Vec Algorithm - find semantically similar objects such as questions
+- Sequence-to-Sequence Algorithm - (Amazon Translate/Amazon Polly/Amazon Transcribe)
+
 - Neural Topic Model (NTM) Algorithm - Topic Modeling
 - Latent Dirichlet Allocation (LDA) Algorithm - Topic Modeling, product recommendations (Amazon Personalize)
-- Sequence-to-Sequence Algorithm - (Amazon Translate/Amazon Polly/Amazon Transcribe)
 
 ### Computer Vision
 - Image Classification Algorithm - multi-label classification (Amazon Rekognition)
-- Object Detection Algorithm - (Object Detection)
+- Object Detection Algorithm - object detection inside Box (Object Detection)
+- Semantic Segmentation Algorithm -  (Object Detection)
+- Instance segmentation - object detection as mask/figure - detecting and delineating each distinct object of interest appearing in an image. (Object Detection)
 
+### Other
 - DeepAR Forecasting Algorithm - RNN timeseries forecasting (Amazon Forecast)
 - Factorization Machines Algorithm - click rate patterns (Amazon Kinesis Data Analytics)
-
 - IP Insights Algorithm - detect anomalous IP address (Amazon GuardDuty)
 - K-Means Algorithm - handwriting recognition black/white pixel as 0,1 (Amazon Textract)
-
 - Principal Component Analysis (PCA) Algorithm - Dimention Reduction
 - Random Cut Forest (RCF) Algorithm - (Amazon Kinesis Data Analytics)
-- Semantic Segmentation Algorithm -  (Object Detection)
+
 
 ### Regression
 - Linear Learner Algorithm - either classification or regression problems
@@ -84,13 +87,45 @@ __Q. PCA and t-SNE Automatic feature extraction__
 PCA is for linear models
 t-SNE for non-linear models
 
-## Questions on Modeling
+Q. Stratified KFold?
+- Ensures each fold is a good representative of the whole.
 
-Q. 
+Q. Leave-one-out cross validation
+- for small datasets
 
+## Questions on Training
 
+Q. Steps required for TRAINING JOB
+1. __URL__ for source and destination S3 having data
+2. __compute resource__ ML instance size specs
+3. __Amazon Elastic Container Regitry Path__ for TRAINING CODE
 
-## Questions on Lienar learner Hyperparameter
+Q. Dont like to wait while model is getting trained rather spend time on improving on model
+- Use SageMaker Estimatoers in local mode
+
+## Questions on Model Evaluation
+
+Q. Overfitting avoidance techiniques
+- more data, less features, regularization
+
+Q. Validation has accuracy of 96% but Test data not?
+- Need more data, shuffle it
+
+## Questions on Linear learner Hyperparameter
+
+Q. Models to tune hyperparameters
+- GRID Search | exhaustive
+- Random Search | random combination until desired outcome
+
+Q. Sagemaker automated hyperparameter tuning
+- uses methods like gradient descent, Bayesian optimization, and evolutionary algorithms to conduct a guided search for the best hyperparameter settings.
+
+Q. Common hyperparameters
+- Momentum
+- Optimizers
+- Activation Functions
+- Dropout
+- Learning Rate
 
 Q. __Loss__ when predictor_type for XGBoost
 1. __regressor__, auto, squared_loss, absolute_loss, eps_insensitive_squared_loss, eps_insensitive_absolute_loss, quantile_loss, and huber_loss.
@@ -116,8 +151,13 @@ Q. Parameters and Default values
 9. __target_precision__ (0.8) |  If binary_classifier_model_selection_criteria is recall_at_target_precision
 10. __target_recall__ (0.8) |If binary_classifier_model_selection_criteria is recall_at_target_recall
 
-Q. Model is getting overtrained
-- 
+## Questions of Classification Hyperparameter
+
+Q.
+
+
+
+
 
 Q. Loss function converges to different but stable values ,during multiple runs with identicle parameter 
 - Reduce batch size, Decrease Learning rate/ Early stopping
@@ -190,10 +230,6 @@ Q. Classification model using one of the Amazon SageMaker built-in algorithms an
 Q. SageMaker support Regression vs Classification
 - 
 
-Q. Overfitting avoid
-- more data, less features, regularization
 
-Q. Validation has accuracy of 96% but Test data not?
-- Need more data, shuffle it
 
 Q. 
