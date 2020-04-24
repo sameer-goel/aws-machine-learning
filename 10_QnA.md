@@ -61,7 +61,12 @@ Services:
 - Amazon Lex - NLP bot
 
 ### Standardization
+Standardization (also called z-score normalization) transforms your data such that the resulting distribution has a mean of 0 and a standard deviation of 1.
 <img src="https://i.imgur.com/GHwOoVO.gif" height="300" />
+
+### Scaling
+In scaling (also called min-max scaling), you transform the data such that the features are within a specific range e.g. [0, 1].
+<img src="https://i.imgur.com/tpEqnnB.png" height="200" />
 
 # QnA
 
