@@ -3,7 +3,7 @@
 <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mathworks.com%2Fhelp%2Fstats%2Fmachine-learning-in-matlab.html&psig=AOvVaw3wR5LZh7UXAJjPipF6tajB&ust=1587698338171000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKib067L_egCFQAAAAAdAAAAABAX" height="300" />
 
 ## Sagemaker data source options and speed
-![](https://i.imgur.com/DbrpPWm.png)
+<img src="https://i.imgur.com/DbrpPWm.png" height="300" />
 
 ## Question on Dockerfile
 
