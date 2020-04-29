@@ -69,11 +69,17 @@ Q. 20% Numeric Data is missing
 - Regression imputation
 - Regularization imputation
 
+Q. 20% Categorical data is missing
+- KNN
+
 Q. Classify good and bad sentences using LSTM
 - Vectorize sentenses -> Tarform them to NUMERIC with PADDING -> Use sentences as input
 
 Q. correlation between variable is -.9
 - inversly propotional
+
+Q. Data set is uneven for fraud Detection dataset
+- SMOTE
 
 __Q. Standardization__
 Standardization (also called z-score normalization) transforms your data such that the resulting distribution has a mean of 0 and a standard deviation of 1.
@@ -110,6 +116,9 @@ Q. Overfitting avoidance techiniques
 
 Q. Validation has accuracy of 96% but Test data not?
 - Need more data, shuffle it
+
+Q. Nural network has high accuracy on training data but testing
+- 
 
 ## Questions on Linear learner Hyperparameter
 
@@ -157,17 +166,19 @@ Q. Parameters and Default values
 
 ## Questions of Classification Hyperparameter
 
-Q.
+Q. 
 
 
 
+## Questions on auto hyperparameter tuning
 
+Q. Sagemaker is consuming more resources and costong high.
+- Use less concurrency
+- use LOGarithmic scales on parameter ranges
+- running 1 training job at a time achieves the best results with the least amount of compute time.
 
 Q. Loss function converges to different but stable values ,during multiple runs with identicle parameter 
 - Reduce batch size, Decrease Learning rate/ Early stopping
-
-Q. Data set is uneven for fraud Detection dataset
-- SMOTE
 
 Q. Common scaling techniques
 - Mean/variance standardization [-1,0,1]
@@ -191,7 +202,7 @@ Q. algorithm that can be used both as a built-in-algorithm as well as a framewor
 Q. To get inference for an entire dataset, you are developing a batch transform job using Amazon SageMaker High-level Python Library. Which method would you call so that the inferences are available for the entire dataset
 - 
 
-Q. Method calls you need to use to deploy the model
+Q. Method calls, you need to use to deploy the model
 - 
 
 Q. Visual Types
@@ -264,3 +275,11 @@ Q. SageMaker Encryption options in Transit
 
 Q. SageMaker Audit
 - CloudTrail
+
+## Questions of Sagemaker
+
+Q. You wish to use Apache spark to pre-process the data for XGBoost model.
+- use sagemaker_pyspark and XGBoost sagemaker estimator
+
+Q. 
+
