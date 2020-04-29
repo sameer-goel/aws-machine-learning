@@ -112,13 +112,10 @@ Q. Dont like to wait while model is getting trained rather spend time on improvi
 ## Questions on Model Evaluation
 
 Q. Overfitting avoidance techiniques
-- more data, less features, regularization
-
-Q. Validation has accuracy of 96% but Test data not?
-- Need more data, shuffle it
-
-Q. Nural network has high accuracy on training data but testing
-- 
+- more data, 
+- less features
+- early stopping
+- dropout regularization
 
 ## Questions on Linear learner Hyperparameter
 
