@@ -70,8 +70,9 @@ Q. Identify SageMaker supervised learning algorithms that are memory bound
 `[Ref] Common parameters for built-in algorithms  - https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-algo-docker-registry-paths.html`
 
 Q. Single instance only Algorithms
-- CPU Single instance only: Object2Vec, Balzing Text, LDA
-- GPU Single instance only: Object2Vec, Balzing Text, Seq2Seq, Semantic Segmentation
+- CPU/GPU Single instance only: Object2Vec, Balzing Text, KNN, K-means
+- CPU Single instance only: LDA
+- GPU Single instance only: Seq2Seq, Semantic Segmentation
 
 Q. Algorithms that dont accept recordIO
 - DeepAR - JSON or Parquet
