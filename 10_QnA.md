@@ -106,6 +106,9 @@ Q. While using the K-means SageMaker algorithm, which strategies are available t
 - Random
 - k-means++
 
+Q. Amazon SageMaker provides Neo container images for?
+- XGBoost and Image Classification models
+
 ## Questions on Exploratory analysis
 
 Q. Visual Types
