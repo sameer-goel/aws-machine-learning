@@ -92,12 +92,12 @@ Q. Algorithms that can be supervised and unsupervised
     - Supervised TextClassification 
 
 Q. algorithm that can be used both as a built-in-algorithm as well as a framework such as Tensorflow
-- 
+- __XGBoost__
 
-Q. Amazon Elastic Inference? 
-- allows you to attach low-cost GPU-powered acceleration to EC2 and Sagemaker instances or Amazon ECS tasks, 
-- to reduce the cost of running deep learning inference by up to 75%. 
-- Supports __TensorFlow__, __Apache MXNet__, __PyTorch__ and __ONNX__ models
+
+Q. While using the K-means SageMaker algorithm, which strategies are available to determine how the initial cluster centers are selected.
+- Random
+- k-means++
 
 ## Questions on Exploratory analysis
 
@@ -127,18 +127,21 @@ Standardization (also called z-score normalization) transforms your data such th
 <img src="https://i.imgur.com/GHwOoVO.gif" height="300" />
 
 __Q. Scaling__
-In scaling (also called min-max scaling), you transform the data such that the features are within a specific range e.g. [0, 1].
+- In scaling (also called min-max scaling), you transform the data such that the features are within a specific range e.g. [0, 1].
 <img src="https://i.imgur.com/tpEqnnB.png" height="300" />
 
-__Q. PCA and t-SNE Automatic feature extraction__
-PCA is for linear models
-t-SNE for non-linear models
+Q. PCA and t-SNE Automatic feature extraction
+- PCA is for linear models
+- t-SNE for non-linear models
 
 Q. Stratified KFold?
 - Ensures each fold is a good representative of the whole.
 
 Q. Leave-one-out cross validation
 - for small datasets
+
+Q. Which aws service can transform data output to RecordIO-Protobuf
+- Apache Spark EMR Cluster. (Glue or Kinesis doesnot work)
 
 ## Questions on Training
 
@@ -169,6 +172,11 @@ Q. Batch Transform
     - transformer.transform()
 - AWS SDK
     - create_transform_job()
+
+Q. Amazon Elastic Inference? 
+- allows you to attach low-cost GPU-powered acceleration to EC2 and Sagemaker instances or Amazon ECS tasks, 
+- to reduce the cost of running deep learning inference by up to 75%. 
+- Supports __TensorFlow__, __Apache MXNet__, __PyTorch__ and __ONNX__ models
 
 ## Questions on Model Evaluation
 
