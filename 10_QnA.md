@@ -94,7 +94,17 @@ Q. Algorithms that can be supervised and unsupervised
 Q. algorithm that can be used both as a built-in-algorithm as well as a framework such as Tensorflow
 - 
 
-## Questions on Data Prep and Exploratory analysis
+Q. Amazon Elastic Inference? 
+- allows you to attach low-cost GPU-powered acceleration to EC2 and Sagemaker instances or Amazon ECS tasks, 
+- to reduce the cost of running deep learning inference by up to 75%. 
+- Supports __TensorFlow__, __Apache MXNet__, __PyTorch__ and __ONNX__ models
+
+## Questions on Exploratory analysis
+
+Q. Visual Types
+- Stock Price : Scatter Plot, Box Plot
+
+## Questions on Data Prep
 
 Q. 20% Numeric Data is missing
 - Regression imputation
@@ -139,6 +149,26 @@ Q. Steps required for TRAINING JOB
 
 Q. Dont like to wait while model is getting trained rather spend time on improving on model
 - Use SageMaker Estimatoers in local mode
+
+## Questions on Model Deploying
+
+Q. Deploy Methods?
+- Hosting
+- Batch Transform
+
+Q. Hosting
+- SageMaker SDK 
+    - .deploy()
+- AWS SDK
+    1. CreateModel
+    2. CreateEndpointConfig
+    3. CreateEndpoint
+
+Q. Batch Transform
+- SageMaker SDK
+    - transformer.transform()
+- AWS SDK
+    - create_transform_job()
 
 ## Questions on Model Evaluation
 
@@ -224,9 +254,6 @@ Q. To get inference for an entire dataset, you are developing a batch transform 
 
 Q. Method calls, you need to use to deploy the model
 - 
-
-Q. Visual Types
-- Stock Price 
 
 Q. activation function and their USEs
 - Softmax
