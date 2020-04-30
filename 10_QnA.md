@@ -63,6 +63,37 @@ Services:
 - Amazon Kendra - NLP powered search
 - Amazon Lex - NLP bot
 
+Q. Identify SageMaker supervised learning algorithms that are memory bound
+- Most Amazon SageMaker algorithms have been engineered to take advantage of GPU computing for training. Despite higher per-instance costs, GPUs train more quickly, making them more cost effective. 
+- Exceptions, such as __XGBoost__, __Random Cut Forest__, __LDA__
+
+`[Ref] Common parameters for built-in algorithms  - https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-algo-docker-registry-paths.html`
+
+Q. Single instance only Algorithms
+- CPU Single instance only: Object2Vec, Balzing Text, LDA
+- GPU Single instance only: Object2Vec, Balzing Text, Seq2Seq, Semantic Segmentation
+
+Q. Algorithms that dont accept recordIO
+- DeepAR - JSON or Parquet
+- Object2Vec - JSON
+- IP Insights - CSV
+- XGBoost - CSV
+- Semantic Segmentation - Image files
+- Blazing Text - Text file, 1 sentenece per line with space separed token
+- All other are accept recordIO: 
+- Factorization Machine, Image classification, Object Detection, k-means, K-NN, PCA, Linear learner, Neural Topic Modeling, LDA, RCF, Seq2Seq
+
+Q. Sagemkaer algorithms that can be parallelized
+- 
+
+Q. Algorithms that can be supervised and unsupervised
+- Blazing Text
+    - Unsupervised Word2Vec 
+    - Supervised TextClassification 
+
+Q. algorithm that can be used both as a built-in-algorithm as well as a framework such as Tensorflow
+- 
+
 ## Questions on Data Prep and Exploratory analysis
 
 Q. 20% Numeric Data is missing
@@ -184,17 +215,9 @@ Q. Common scaling techniques
 - Robust
 - Normalizer
 
-Q. Identify SageMaker supervised learning algorithms that are memory bound
-- KNN, XGBoost
 
-Q. Sagemkaer algorithms that can be parallelized
-- 
 
-Q. Algorithms that can be supervised and unsupervised
-- Blazing Text
 
-Q. algorithm that can be used both as a built-in-algorithm as well as a framework such as Tensorflow
-- 
 
 Q. To get inference for an entire dataset, you are developing a batch transform job using Amazon SageMaker High-level Python Library. Which method would you call so that the inferences are available for the entire dataset
 - 
