@@ -74,6 +74,10 @@ Q. Single instance only Algorithms
 - CPU Single instance only: LDA
 - GPU Single instance only: Seq2Seq, Semantic Segmentation
 
+Q. Algorithms that just accept recordIO
+- Factorization Machine
+- Seq2Seq
+
 Q. Algorithms that dont accept recordIO
 - DeepAR - JSON or Parquet
 - Object2Vec - JSON
@@ -81,8 +85,9 @@ Q. Algorithms that dont accept recordIO
 - XGBoost - CSV
 - Semantic Segmentation - Image files
 - Blazing Text - Text file, 1 sentenece per line with space separed token
-- All other are accept recordIO: 
-- Factorization Machine, Image classification, Object Detection, k-means, K-NN, PCA, Linear learner, Neural Topic Modeling, LDA, RCF, Seq2Seq
+
+Q. All other are accept recordIO and CSV: 
+- Image classification, Object Detection, k-means, K-NN, PCA, Linear learner, Neural Topic Modeling, LDA, RCF
 
 Q. Sagemkaer algorithms that can be parallelized
 - 
