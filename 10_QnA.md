@@ -321,7 +321,10 @@ Q. Classification model using one of the Amazon SageMaker built-in algorithms an
 Q. SageMaker support Regression vs Classification
 - 
 
+## Questions on text matrix
 
+Q. tf-idf matrix for  { Hold please }, { Please try again }, { Please call us back }.
+- 3x3 because 3 sentence x 3 trigrams
 
 ## Security
 
@@ -357,5 +360,7 @@ Q. SageMaker Audit
 Q. You wish to use Apache spark to pre-process the data for XGBoost model.
 - use sagemaker_pyspark and XGBoost sagemaker estimator
 
-Q. 
+Q. Data to be queries is stores in S3.
+- Easy way: Use Glue and Athena
+- Cost effective way: Use presto on spot instance
 
