@@ -356,7 +356,10 @@ Q. SageMaker Audit
 - CloudTrail
 
 Q. Encrypt data using GLUE
-- 
+- Encrypt __Data Catalog__
+- Encrypt __Job bookmark__
+- SSE-S3 or SSE-KMS settings that is passed to __ETL Job__
+- Also do, S3 Encryption, CloudWatch log encryption 
 
 ## Questions of Sagemaker
 
