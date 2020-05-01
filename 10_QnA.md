@@ -112,7 +112,6 @@ Q. Algorithms that can be supervised and unsupervised
 Q. algorithm that can be used both as a built-in-algorithm as well as a framework such as Tensorflow
 - __XGBoost__
 
-
 Q. While using the K-means SageMaker algorithm, which strategies are available to determine how the initial cluster centers are selected.
 - Random
 - k-means++
@@ -439,4 +438,9 @@ Q. Hyperparameter that governs how quickly model adepts new or changing data.
 Q. Automate wrong labeled data by Groud Truth
 - Annotation Consolidation allows to combine annotations of multiple workers to produce probabilitistic model.
 
-Q. 
+Q. Ground Truth Automated Data Labeling
+
+- Image classification (Single label)
+- Semantic segmentation
+- Bounding box
+- Text classification
