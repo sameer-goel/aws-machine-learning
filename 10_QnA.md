@@ -370,3 +370,9 @@ Q. Data to be queries is stores in S3.
 - Easy way: Use Glue and Athena
 - Cost effective way: Use presto on spot instance
 
+Q. Transfer data from local machine into your AWS data repository.
+- Host the dataset in Amazon S3 and storing it in two channels. 
+- One for train and one for validation, in four directories, 
+- Two for images and two for annotations. 
+- Use a label map that describes how the annotation mappings are established.
+
