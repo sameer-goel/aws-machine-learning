@@ -367,6 +367,9 @@ Q. Test ML model in Prod.
 - Route % of traffic to each for evaluation of best one
 - Route 100% to the model having better perforance.
 
+Q. IAM Policy required to create Models
+- iam:PassRole action is needed for the Amazon SageMaker action sagemaker:CreateModel
+
 ## Questions on Model Deploying
 
 Q. Validate a model Offline
@@ -402,3 +405,24 @@ Q. Amazon Elastic Inference?
 Q. Scaling SageMaker Endpoint
 - TargetTrackingScalingPolicyConfiguration
 - reduce Cooldown period for aggresive scaling 
+
+Q. Want to add low cost GPU
+- RE-Deploy endpoint with Elastic Inference
+
+
+# Exploratory data analysis
+
+Q. faud detection data is unenven
+- SMOTE but it creates almost identical/duplicate records
+- GANs creates more unique but closely matching
+
+# Modeling Domain
+
+Q. Algo for Recommendation System -  KNN
+
+Q. Segment customer based on their spending habits - K-Means
+
+
+# Data Engineering Domain
+
+- 
