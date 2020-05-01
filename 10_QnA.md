@@ -355,6 +355,9 @@ Q. SageMaker Encryption options in Transit
 Q. SageMaker Audit
 - CloudTrail
 
+Q. Encrypt data using GLUE
+- 
+
 ## Questions of Sagemaker
 
 Q. You wish to use Apache spark to pre-process the data for XGBoost model.
