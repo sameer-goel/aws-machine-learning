@@ -172,32 +172,7 @@ Q. Steps required for TRAINING JOB
 3. __Amazon Elastic Container Regitry Path__ for TRAINING CODE
 
 Q. Dont like to wait while model is getting trained rather spend time on improving on model
-- Use SageMaker Estimatoers in local mode
-
-## Questions on Model Deploying
-
-Q. Deploy Methods?
-- Hosting
-- Batch Transform
-
-Q. Hosting
-- SageMaker SDK 
-    - .deploy()
-- AWS SDK
-    1. CreateModel
-    2. CreateEndpointConfig
-    3. CreateEndpoint
-
-Q. Batch Transform
-- SageMaker SDK
-    - transformer.transform()
-- AWS SDK
-    - create_transform_job()
-
-Q. Amazon Elastic Inference? 
-- allows you to attach low-cost GPU-powered acceleration to EC2 and Sagemaker instances or Amazon ECS tasks, 
-- to reduce the cost of running deep learning inference by up to 75%. 
-- Supports __TensorFlow__, __Apache MXNet__, __PyTorch__ and __ONNX__ models
+- Use SageMaker Estimators in local mode
 
 ## Questions on Model Evaluation
 
@@ -361,6 +336,14 @@ Q. Encrypt data using GLUE
 - SSE-S3 or SSE-KMS settings that is passed to __ETL Job__
 - Also do, S3 Encryption, CloudWatch log encryption 
 
+Q. Secure S3 <-> RDS <-> Glue communication
+- S3  <-> RDS : VPC Gateway Endpoint to access to S3 from RDS
+- RDS <-> Glue: AWS Glue sets up elastic network interfaces that enable your jobs to connect securely to RDS within your VPC
+
+Q. Sagemaker to Read encrytped data in S3
+- Notebook instance role to be associated with KMS Key.
+- Ensure s3 bukcet has SSE-KMS encryption
+
 ## Questions of Sagemaker
 
 Q. You wish to use Apache spark to pre-process the data for XGBoost model.
@@ -376,3 +359,46 @@ Q. Transfer data from local machine into your AWS data repository for Segamntic 
 - 2 for images and 2 for annotations. 
 - Use a label map that describes how the annotation mappings are established.
 
+Q. Use custom lib for transformation with Glue Pipeline.
+- Upload lib as .zip in S3, include s3 link as script lib and job parameter.
+
+Q. Test ML model in Prod.
+- 2 models on SINGLE endpoint
+- Route % of traffic to each for evaluation of best one
+- Route 100% to the model having better perforance.
+
+## Questions on Model Deploying
+
+Q. Validate a model Offline
+- Use historical data - __backtesting__ with __HOLDOUT Set__ typicall 10-20% of Training Data.
+- K Fold validation
+
+Q. Validation online (Prodcution varient) | Testing with small % of live data
+- Multiple Models are deployed on single endpoint and then small portion of the live traffic goes to those models that you want to validate to find out best performing one.
+
+Q. Deploy Methods?
+- Hosting
+- Batch Transform
+
+Q. Hosting
+- SageMaker SDK 
+    - .deploy()
+- AWS SDK
+    1. CreateModel
+    2. CreateEndpointConfig
+    3. CreateEndpoint
+
+Q. Batch Transform
+- SageMaker SDK
+    - transformer.transform()
+- AWS SDK
+    - create_transform_job()
+
+Q. Amazon Elastic Inference? 
+- allows you to attach low-cost GPU-powered acceleration to EC2 and Sagemaker instances or Amazon ECS tasks, 
+- to reduce the cost of running deep learning inference by up to 75%. 
+- Supports __TensorFlow__, __Apache MXNet__, __PyTorch__ and __ONNX__ models
+
+Q. Scaling SageMaker Endpoint
+- TargetTrackingScalingPolicyConfiguration
+- reduce Cooldown period for aggresive scaling 
