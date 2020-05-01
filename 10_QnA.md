@@ -1,7 +1,5 @@
 ## ML Cheatsheets
 
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mathworks.com%2Fhelp%2Fstats%2Fmachine-learning-in-matlab.html&psig=AOvVaw3wR5LZh7UXAJjPipF6tajB&ust=1587698338171000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKib067L_egCFQAAAAAdAAAAABAX" height="300" />
-
 ## Sagemaker data source options and speed
 <img src="https://i.imgur.com/DbrpPWm.png" height="200" />
 
@@ -23,6 +21,11 @@ COPY train.py /opt/ml/code/train.py
 ENV SAGEMAKER_PROGRAM train.py
 
 ```
+## Question on SageMaker Python SDK
+
+Q. Using own tensor flow code.
+- Use tensorflow in SageMaker and edit cod ein SageMaker Python SDK
+
 
 Ref: https://github.com/aws/sagemaker-containers/blob/master/README.rst
 
@@ -50,13 +53,21 @@ Ref: https://github.com/aws/sagemaker-containers/blob/master/README.rst
 - Principal Component Analysis (PCA) Algorithm - Dimention Reduction
 - Random Cut Forest (RCF) Algorithm - (Amazon Kinesis Data Analytics)
 
-
 ### Regression
 - Linear Learner Algorithm - either classification or regression problems
 - XGBoost Algorithm ----- (Amazon Fraud Detector)
 - K-Nearest Neighbors (k-NN) Algorithm - Credit ratings, product recommendations (Amazon Personalize)
 
-Services:
+### TIP
+
+- CNN - Convolutional Neural Networks are mostly for __image and signal__ processing. 
+- RNN - Recurrent Neural Networks are mostly for __text or speech__ use-cases where sequence prediction is key.
+- Binary Classification - AUC->1 is metric to look for. | logistic or hinge_loss is objective.
+- MultiClass Classification - micro F1 score to look for. | muti:softmax is objective.
+- 
+
+
+### Services:
 - Amazon Polly - Text to Speech
 - Amazon Transcribe - Speech to Text
 - Amazon CodeGuru - code review
