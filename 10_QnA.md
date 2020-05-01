@@ -63,7 +63,7 @@ Ref: https://github.com/aws/sagemaker-containers/blob/master/README.rst
 - CNN - Convolutional Neural Networks are mostly for __image and signal__ processing. 
 - RNN - Recurrent Neural Networks are mostly for __text or speech__ use-cases where sequence prediction is key.
 - Binary Classification - AUC->1 is metric to look for. | logistic or hinge_loss is objective.
-- MultiClass Classification - micro F1 score to look for. | muti:softmax is objective.
+- MultiClass Classification - Macro F1 score to look for. | muti:softmax is objective.
 - 
 
 
