@@ -418,11 +418,25 @@ Q. faud detection data is unenven
 
 # Modeling Domain
 
-Q. Algo for Recommendation System -  KNN
+Q. Algo for Recommendation System 
+-  KNN
 
-Q. Segment customer based on their spending habits - K-Means
+Q. Segment customer based on their spending habits 
+- K-Means
+
+Q. Email phising 
+- N-Gram
+
+Q. Starting with std pre-trained market model and then further training it 
+- Transfer Learning
+
+Q. Hyperparameter that governs how quickly model adepts new or changing data.
+- Set Learing rate at high value (0.0 - 1.0)
 
 
 # Data Engineering Domain
 
-- 
+Q. Automate wrong labeled data by Groud Truth
+- Annotation Consolidation allows to combine annotations of multiple workers to produce probabilitistic model.
+
+Q. 
