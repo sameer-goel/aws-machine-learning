@@ -461,7 +461,8 @@ Q. Find most predictive booster feature of XGBoost
 - __booster = gbtree__ using get_score with __importance_type = total_gain__
 
 Q. Glue ML to FindMatches to get rid of duplicates.
-- precision-recall to __'precision'__ and accuracy-cost parameter to __'accuracy'__
+- precision-recall to __'precision'__ (because we are minimizing false positive, means should not flag any distinct record as duplicate)
+- accuracy-cost parameter to __'accuracy'__ (setting to __lower_cost__ might be a compromise with accuracy)
 
 # Data Engineering Domain
 
@@ -478,3 +479,6 @@ Q. Ground Truth Automated Data Labeling
 Q. Deployed model in production requires to get inferences on ENTIRE Dataset and 
 don't need PERSISTENT endpoint.
 - SageMaker BATCH Transform
+
+Q. reason why Firehose data is rejected records sent by lambda
+- Firehose requires 1. recrodid 2. data params 3. result params, which might be missing.
