@@ -415,6 +415,9 @@ Q. faud detection data is unenven
 - SMOTE but it creates almost identical/duplicate records
 - GANs creates more unique but closely matching
 
+Q. Streaming data for RCF requires pre and post steps via ML model
+- Use INFERENCE Pipeline.
+
 # Modeling Domain
 
 Q. Algo for Recommendation System 
@@ -432,6 +435,10 @@ Q. Starting with std pre-trained market model and then further training it
 Q. Hyperparameter that governs how quickly model adepts new or changing data.
 - Set Learing rate at high value (0.0 - 1.0)
 
+Q. Bayesian vs Random Hyperparameter Tuning
+- __Bayesian__ search treats hyperparameter tuning like a [regression] problem. Given a set of input features (the hyperparameters), hyperparameter tuning optimizes a model for the metric that you choose. 
+- __Random__ search, hyperparameter tuning chooses a random combination of values from within the ranges that you specify for hyperparameters for each training job it launches
+
 
 # Data Engineering Domain
 
@@ -444,3 +451,7 @@ Q. Ground Truth Automated Data Labeling
 - Semantic segmentation
 - Bounding box
 - Text classification
+
+Q. Deployed model in production requires to get inferences on ENTIRE Dataset and 
+dont need PERSISTANT endpoint.
+- SageMaker BATCH Transform
