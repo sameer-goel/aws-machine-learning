@@ -1,7 +1,5 @@
 ## Model Evaluation
 
-<img src="https://i.imgur.com/GI0pLVK.png" height="300" />
-
 ## Offline Validation
 Both k-fold and backtesting with historic data are offline validation methods
 
@@ -11,15 +9,24 @@ with real world data
 ****************************************************
 ## Regression Models, look for generalization
 
-1. Underfitting: - Model is not good enough to predict.
+
+<img src="https://i.imgur.com/GI0pLVK.png" height="300" />
+
+1. Under-fitting: - Model is not good enough to predict.
 How to resolve: More Data, __Train Longer__, Add more features to dataset
 
-2. Overfitting: - Model memorizes and too much inclined with existing data. Predicting New unseen data will be a challenge.
+2. Over-fitting: - Model memorizes and too much inclined with existing data. Predicting New unseen data will be a challenge.
 How to resolve: __Early stop__ based on fit threshold, More data, Sprinkle in some noise, regularization (data points smoothening), ensemble (combine models together), Drop some features.
 <img src="https://i.imgur.com/e7rAimx.png" height="400" />
 
+## Bias and Variance | sum of squares
+<img src="https://i.imgur.com/6SjMa9m.png" height="200" />
 
-### Residual Distribution | should be centerd to zero.
+### Introducing Regularization to adjust variance at cost of bias to avoid over-fitting
+- L2: Ridge regression - increase bias - introduce error to avoid overfitting
+- L1: Lasso regression - 
+
+### Residual Distribution | should be centered to zero.
 - if centered around negative value: prediction is too high
 - if centered around positive value: prediction is too low
 <img src="https://docs.aws.amazon.com/machine-learning/latest/dg/images/mlconcepts_image4.png" height="300" />
@@ -35,7 +42,7 @@ How to resolve: __Early stop__ based on fit threshold, More data, Sprinkle in so
 Step should not be too large (miss ninimum) or too small (take longer)
 <img src="https://i.imgur.com/gBpuE6A.png" height="300" />
 
-## Binary Classificaiton Models
+## Binary Classification Models
 
 <img src="https://secureservercdn.net/198.71.233.197/l87.de8.myftpupload.com/wp-content/uploads/2016/09/table-blog.png" height="300" />
 
@@ -44,7 +51,7 @@ Step should not be too large (miss ninimum) or too small (take longer)
 - **Precision:** Accuracy of a predicted positive outcome in percent.| reduce false +ve | Spam Checker, Anomaly detection
 
 - **Recall/Sensitivity/TPR:** Measure the strength of the model to predict a positive outcome. | reduce false -ve (FN)
-Fraud Detection, Medical Digonistics, COVID19 Test
+Fraud Detection, Medical Diagnostics, COVID19 Test
 
 - **Specificity/TNR:** Measure the strength of the model to predict a negetive outcome.
 reduce FP, Spam detector, Explicit Content Blog, Catch just Fish
@@ -88,7 +95,7 @@ Look for Lowest Impurity
 
 __Tips:__
 
-Q. If loss funciton is settling on a similar value, how to imporve model
+Q. If loss function is settling on a similar value, how to improve model
 A. A learning rate can be too large that it cannot find the the true global minimum. Decreasing the learning rate allows the training process to find lower loss function floors but it can also increase the time needed for convergence.
 
 Q. Linear Learner model should be tuned on?
