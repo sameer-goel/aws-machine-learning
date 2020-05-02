@@ -36,9 +36,9 @@ To find local minimum and then global minimum
 ____________________
 
 ### Classification K-Nearest Neighbor | user does not even defines identifying attributes
-- predict value or classification to closest (avg value of nearest neighbour)
-- KNN is lazy and momorizes
-- kind of sterotyping
+- predict value or classification to closest (avg value of nearest neighbor)
+- KNN is lazy and motorizes
+- kind of stereotyping
 
 Example - Credit ratings, product recommendations for similar items
 
@@ -57,7 +57,7 @@ Example - analog to digital high and low as 0,1 , handwriting recognition black/
 
 <img src="https://i.imgur.com/C3GKbNo.png" height="300" />
 
-Elbow Plot, varaition does not chage from this point
+Elbow Plot, variation does not change from this point
 <img src="https://i.imgur.com/VJh9R8J.png" height="300" />
 
 **********************************************************************************************
@@ -75,7 +75,7 @@ Example: Fraud Detection, IP Insights, Quality Control
 
 ## LDA - Latent Dirichlet Allocation | UnSu | Classification  
 __Example: Recommendation article, Musical Influence Artist, Topic Discovery, Automated Document tagging__
-- Similar documents based on frequency of simialar words
+- Similar documents based on frequency of similar words
 <img src="https://i.imgur.com/UEzK4b8.png" height="300" />
 
 ## NTM - Neural Topic Model
@@ -89,14 +89,14 @@ Example - Speech to text AWS Polly
 ## BlazingText
 - Natural Language Processing understanding context and semantic relationships
 - Faster than traditional Word2Vec and FastText
-Example - Amaozon Comprehend - Sentiment analysis, 
+Example - Amazon Comprehend - Sentiment analysis, 
         - AWS Kendra - Enterprise search, 
         - Document Classification - Amazon Macie
 
 ## Object2Vec
 - Identify relation between objects.
 - sad, empathy, death as similar object
-Example - Genere of the book, movie rating
+Example - Genre of the book, movie rating
 
 **********************************************************************************************
 ## Reinforcement Learning
@@ -114,7 +114,7 @@ Example - DeepRacer
 - Memory instance.
 
 - Example: what price to ask for a house or car or phone?
-    - CART Classification and Regression Tress based on Locaiotn, Age, Size, rooms, walk score, climate etc.
+    - CART Classification and Regression Tress based on Location, Age, Size, rooms, walk score, climate etc.
 
 Scenarios- Ranking on an e-commerce website, Fraud Detection
 
