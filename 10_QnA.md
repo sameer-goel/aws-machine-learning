@@ -457,7 +457,7 @@ Q. Visualize K-means metrics tuning job
 - use module __sagemaker.analytics__
       import __TrainingJobAnalytics__
 
-Q. Find most predictive feature of XGBoost
+Q. Find most predictive booster feature of XGBoost
 - 
 
 # Data Engineering Domain

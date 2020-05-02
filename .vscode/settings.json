@@ -4,5 +4,8 @@
     "markdown.preview.scrollPreviewWithEditor": false,
     "markdown.preview.scrollEditorWithPreview": false,
     "markdown.preview.markEditorSelection": false,
-    "markdown.preview.doubleClickToSwitchToEditor": false
+    "markdown.preview.doubleClickToSwitchToEditor": false,
+    "cSpell.words": [
+        "gbtree"
+    ]
 }
