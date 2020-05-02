@@ -14,12 +14,14 @@ with real world data
 1. Underfitting: - Model is not good enough to predict.
 How to resolve: More Data, __Train Longer__, Add more features to dataset
 
-2. Overfitting: - Model memorizes and too much inclined with existing data. Predicting New unseen data will be a challange.
-How to resolve: __Early stop__ based on fit threshhold, More data, Sprinkle in some noise, regularization (data points smoothening), ensemble (combine models together), Drop some features.
+2. Overfitting: - Model memorizes and too much inclined with existing data. Predicting New unseen data will be a challenge.
+How to resolve: __Early stop__ based on fit threshold, More data, Sprinkle in some noise, regularization (data points smoothening), ensemble (combine models together), Drop some features.
+<img src="https://i.imgur.com/e7rAimx.png" height="200" />
+
 
 ### Residual Distribution | should be centerd to zero.
-- if cetered around negetive value: prediction is too high
-- if cetered around positive value: prediction is too low
+- if centered around negative value: prediction is too high
+- if centered around positive value: prediction is too low
 <img src="https://docs.aws.amazon.com/machine-learning/latest/dg/images/mlconcepts_image4.png" height="300" />
 
 ### Error
