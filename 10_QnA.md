@@ -1,4 +1,4 @@
-## ML Cheatsheets
+## ML Cheat sheets
 
 ## Sagemaker data source options and speed
 <img src="https://i.imgur.com/DbrpPWm.png" height="200" />
@@ -50,7 +50,7 @@ Ref: https://github.com/aws/sagemaker-containers/blob/master/README.rst
 - Factorization Machines Algorithm - click rate patterns (Amazon Kinesis Data Analytics)
 - IP Insights Algorithm - detect anomalous IP address (Amazon GuardDuty)
 - K-Means Algorithm - handwriting recognition black/white pixel as 0,1 (Amazon Textract)
-- Principal Component Analysis (PCA) Algorithm - Dimention Reduction
+- Principal Component Analysis (PCA) Algorithm - Dimension Reduction
 - Random Cut Forest (RCF) Algorithm - (Amazon Kinesis Data Analytics)
 
 ### Regression
@@ -64,7 +64,6 @@ Ref: https://github.com/aws/sagemaker-containers/blob/master/README.rst
 - RNN - Recurrent Neural Networks are mostly for __text or speech__ use-cases where sequence prediction is key.
 - Binary Classification - AUC->1 is metric to look for. | logistic or hinge_loss is objective.
 - MultiClass Classification - Macro F1 score to look for. | muti:softmax is objective.
-- 
 
 
 ### Services:
@@ -89,14 +88,14 @@ Q. Algorithms that just accept recordIO-recordIO-protobuf
 - Factorization Machine
 - Seq2Seq
 
-Q. Algorithms that dont accept recordIO-recordIO-protobuf
+Q. Algorithms that don't accept recordIO-recordIO-protobuf
 - DeepAR - JSON or Parquet
 - Object2Vec - JSON
 - IP Insights - CSV
 - XGBoost - CSV
 - Semantic Segmentation - Image files
 - Object Detection - recordIO MXNet
-- Blazing Text - Text file, 1 sentenece per line with space separed token
+- Blazing Text - Text file, 1 sentence per line with space separated token
 
 Q. All other are accept recordIO-recordIO-protobuf and CSV: 
 - Image classification, , k-means, K-NN, PCA, Linear learner, Neural Topic Modeling, LDA, RCF
@@ -134,10 +133,10 @@ Q. 20% Categorical data is missing
 - KNN
 
 Q. Classify good and bad sentences using LSTM
-- Vectorize sentenses -> Tarform them to NUMERIC with PADDING -> Use sentences as input
+- Vectorize sentences -> Transform them to NUMERIC with PADDING -> Use sentences as input
 
 Q. correlation between variable is -.9
-- inversly propotional
+- inversely proportional
 
 Q. Data set is uneven for fraud Detection dataset
 - SMOTE
@@ -161,21 +160,21 @@ Q. Leave-one-out cross validation
 - for small datasets
 
 Q. Which aws service can transform data output to RecordIO-Protobuf
-- Apache Spark EMR Cluster. (Glue or Kinesis doesnot work)
+- Apache Spark EMR Cluster. (Glue or Kinesis doesn't work)
 
 ## Questions on Training
 
 Q. Steps required for TRAINING JOB
 1. __URL__ for source and destination S3 having data
 2. __compute resource__ ML instance size specs
-3. __Amazon Elastic Container Regitry Path__ for TRAINING CODE
+3. __Amazon Elastic Container Registry Path__ for TRAINING CODE
 
-Q. Dont like to wait while model is getting trained rather spend time on improving on model
+Q. Don't like to wait while model is getting trained rather spend time on improving on model
 - Use SageMaker Estimators in local mode
 
 ## Questions on Model Evaluation
 
-Q. Overfitting avoidance techiniques
+Q. Overfitting avoidance techniques
 - more data, 
 - less features
 - early stopping
@@ -233,12 +232,12 @@ Q.
 
 ## Questions on auto hyperparameter tuning
 
-Q. Sagemaker is consuming more resources and costong high.
+Q. Sagemaker is consuming more resources and costing high.
 - Use less concurrency
 - use LOGarithmic scales on parameter ranges
 - running 1 training job at a time achieves the best results with the least amount of compute time.
 
-Q. Loss function converges to different but stable values ,during multiple runs with identicle parameter 
+Q. Loss function converges to different but stable values ,during multiple runs with identical parameter 
 - Reduce batch size, Decrease Learning rate/ Early stopping
 
 Q. Common scaling techniques
@@ -264,7 +263,7 @@ Q. activation function and their USEs
 - RELU
 - Tanh
 
-Q. Kinesis Shard cound calculation
+Q. Kinesis Shard count calculation
 
 Q. Which PCA mode to use
 - Regular - sparse data and a moderate number of observations and features. 
@@ -304,12 +303,12 @@ Q. tf-idf matrix for  { Hold please }, { Please try again }, { Please call us ba
 
 Q. S3 encryption options
 - SSE-S3 - S3 manages key
-- SSE-CMK - Cusomter manages key
+- SSE-CMK - Customer manages key
 - SSE-KMS - AWS manage data key, you manage master key
 
 Q. SageMaker access security
 - IAM roles having policies and conditional keys
-- IAM Fedration
+- IAM Federation
 - Inside VPC, access only via PrivateLink
 
 Q. SageMaker KMS Encryption options at Rest
@@ -339,9 +338,9 @@ Q. Secure S3 <-> RDS <-> Glue communication
 - S3  <-> RDS : VPC Gateway Endpoint to access to S3 from RDS
 - RDS <-> Glue: AWS Glue sets up elastic network interfaces that enable your jobs to connect securely to RDS within your VPC
 
-Q. Sagemaker to Read encrytped data in S3
+Q. Sagemaker to Read encrypted data in S3
 - Notebook instance role to be associated with KMS Key.
-- Ensure s3 bukcet has SSE-KMS encryption
+- Ensure s3 bucket has SSE-KMS encryption
 
 ## Questions of Sagemaker
 
@@ -352,7 +351,7 @@ Q. Data to be queries is stores in S3.
 - Easy way: Use Glue and Athena
 - Cost effective way: Use presto on spot instance
 
-Q. Transfer data from local machine into your AWS data repository for Segamntic Segmentation.
+Q. Transfer data from local machine into your AWS data repository for Semantic Segmentation.
 - Host the dataset in Amazon S3 and storing it in 2 channels. 
 - 1st channel for train and 2nd for validation, in 4 directories, 
 - 2 for images and 2 for annotations. 
@@ -364,7 +363,7 @@ Q. Use custom lib for transformation with Glue Pipeline.
 Q. Test ML model in Prod.
 - 2 models on SINGLE endpoint
 - Route % of traffic to each for evaluation of best one
-- Route 100% to the model having better perforance.
+- Route 100% to the model having better performance.
 
 Q. IAM Policy required to create Models
 - iam:PassRole action is needed for the Amazon SageMaker action sagemaker:CreateModel
@@ -372,10 +371,10 @@ Q. IAM Policy required to create Models
 ## Questions on Model Deploying
 
 Q. Validate a model Offline
-- Use historical data - __backtesting__ with __HOLDOUT Set__ typicall 10-20% of Training Data.
+- Use historical data - __backtesting__ with __HOLDOUT Set__ typically 10-20% of Training Data.
 - K Fold validation
 
-Q. Validation online (Prodcution varient) | Testing with small % of live data
+Q. Validation online (Production variant) | Testing with small % of live data
 - Multiple Models are deployed on single endpoint and then small portion of the live traffic goes to those models that you want to validate to find out best performing one.
 
 Q. Deploy Methods?
@@ -411,7 +410,7 @@ Q. Want to add low cost GPU
 
 # Exploratory data analysis
 
-Q. faud detection data is unenven
+Q. fraud detection data is un-even
 - SMOTE but it creates almost identical/duplicate records
 - GANs creates more unique but closely matching
 
@@ -460,8 +459,8 @@ Q. Visualize K-means metrics tuning job
 
 # Data Engineering Domain
 
-Q. Automate wrong labeled data by Groud Truth
-- Annotation Consolidation allows to combine annotations of multiple workers to produce probabilitistic model.
+Q. Automate wrong labeled data by Ground Truth
+- Annotation Consolidation allows to combine annotations of multiple workers to produce probabilistic model.
 
 Q. Ground Truth Automated Data Labeling
 
@@ -471,5 +470,5 @@ Q. Ground Truth Automated Data Labeling
 - Text classification
 
 Q. Deployed model in production requires to get inferences on ENTIRE Dataset and 
-dont need PERSISTANT endpoint.
+don't need PERSISTENT endpoint.
 - SageMaker BATCH Transform
