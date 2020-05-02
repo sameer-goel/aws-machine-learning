@@ -24,7 +24,8 @@ How to resolve: __Early stop__ based on fit threshold, More data, Sprinkle in so
 
 ### Introducing Regularization to adjust variance at cost of bias to avoid over-fitting
 - L2: Ridge regression - increase bias - introduce error to avoid overfitting
-- L1: Lasso regression - 
+- L1: Lasso regression - increase alpha to reduce the slope = ZERO
+<img src="https://i.imgur.com/tnjCyRI.png" height="400" />
 
 ### Residual Distribution | should be centered to zero.
 - if centered around negative value: prediction is too high
