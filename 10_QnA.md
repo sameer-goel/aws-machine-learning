@@ -458,7 +458,10 @@ Q. Visualize K-means metrics tuning job
       import __TrainingJobAnalytics__
 
 Q. Find most predictive booster feature of XGBoost
-- 
+- __booster = gbtree__ using get_score with __importance_type = total_gain__
+
+Q. Glue ML to FindMatches to get rid of duplicates.
+- precision-recall to __'precision'__ and accuracy-cost parameter to __'accuracy'__
 
 # Data Engineering Domain
 
