@@ -468,6 +468,14 @@ Q. Glue ML to FindMatches to get rid of duplicates.
 - precision-recall to __'precision'__ (because we are minimizing false positive, means should not flag any distinct record as duplicate)
 - accuracy-cost parameter to __'accuracy'__ (setting to __lower_cost__ might be a compromise with accuracy)
 
+Q. Glue ML to FindMatches input file requirement.
+- Labeling file in UTF-8 without BOM(byte order mark)
+
+Q. Glue DataFrames, DynamicFrames, Dynamic Records
+- DataFrame     : Popular, requires schema for ETL
+- DynamicFrames : Each record is self describing so sno schema required
+- DynamicRecord : 
+
 # Data Engineering Domain
 
 Q. Automate wrong labeled data by Ground Truth
