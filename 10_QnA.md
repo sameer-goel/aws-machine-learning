@@ -80,7 +80,7 @@ Q. Identify SageMaker supervised learning algorithms that are memory bound
 `[Ref] Common parameters for built-in algorithms  - https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-algo-docker-registry-paths.html`
 
 Q. Single instance only Algorithms
-- CPU/GPU Single instance only: Object2Vec, Balzing Text, KNN, K-means
+- CPU/GPU Single instance only: Object2Vec, Blazing Text, KNN, K-means
 - CPU Single instance only: LDA
 - GPU Single instance only: Seq2Seq, Semantic Segmentation
 
@@ -93,6 +93,7 @@ Q. Algorithms that don't accept recordIO-recordIO-protobuf
 - Object2Vec - JSON
 - IP Insights - CSV
 - XGBoost - CSV
+
 - Semantic Segmentation - Image files
 - Object Detection - recordIO MXNet
 - Blazing Text - Text file, 1 sentence per line with space separated token
@@ -100,7 +101,7 @@ Q. Algorithms that don't accept recordIO-recordIO-protobuf
 Q. All other are accept recordIO-recordIO-protobuf and CSV: 
 - Image classification, , k-means, K-NN, PCA, Linear learner, Neural Topic Modeling, LDA, RCF
 
-Q. Sagemkaer algorithms that can be parallelized
+Q. Sagemaker algorithms that can be parallelized
 - 
 
 Q. Algorithms that can be supervised and unsupervised
@@ -246,9 +247,6 @@ Q. Common scaling techniques
 - Maxabs
 - Robust
 - Normalizer
-
-
-
 
 
 Q. To get inference for an entire dataset, you are developing a batch transform job using Amazon SageMaker High-level Python Library. Which method would you call so that the inferences are available for the entire dataset
@@ -411,6 +409,17 @@ Q. Scaling SageMaker Endpoint
 Q. Want to add low cost GPU
 - RE-Deploy endpoint with Elastic Inference
 
+Q. IoT <-> Streaming data <-> Inference endpoint
+1. IoT Core get data from IoT device as MQTT
+2. Kinesis stream to fetch data and send to lambda for serialization
+3. Lambda Serializes and send to Inference endpoint
+4. Inference endpoint De-Serializes back
+
+Q. ML Lib for capturing IoT data
+- MLeap for serialization
+- MLib for building Model
+- SparkML serving container to Deploy this pipeline
+
 
 # Exploratory data analysis
 
@@ -420,6 +429,7 @@ Q. fraud detection data is un-even
 
 Q. Streaming data for RCF requires pre and post steps via ML model
 - Use INFERENCE Pipeline.
+- Use Batch Transform
 
 # Modeling Domain
 
@@ -474,7 +484,10 @@ Q. Glue ML to FindMatches input file requirement.
 Q. Glue DataFrames, DynamicFrames, Dynamic Records
 - DataFrame     : Popular, requires schema for ETL
 - DynamicFrames : Each record is self describing so sno schema required
-- DynamicRecord : 
+- DynamicRecord : Logical record within DynamicFrames
+
+Q. Handle variety schema structure incoming records in GLUE.
+- Transform using DynamicFrames to pass data from transform to transform
 
 # Data Engineering Domain
 

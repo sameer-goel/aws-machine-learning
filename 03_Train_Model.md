@@ -1,10 +1,9 @@
-
 # Supervised
 
-## Linear Learner | Predict quatitative value based on numeric input | Dense Continues Data
-- Predict number (regression) or value below or above some threshhold (classification
+## Linear Learner | Predict qualitative value based on numeric input | Dense Continues Data
+- Predict number (regression) or value below or above some threshold (classification
 - Adjust to Minimize error and get an equation for a line.
-- To achive lowest possible on the map (error) uses Stochastic Gradient Descent
+- To achieve lowest possible on the map (error) uses Stochastic Gradient Descent
 <img src="https://i.imgur.com/yYxfRz4.jpg" height="300" />
 <img src="https://i.imgur.com/ZggmVjn.jpg" height="300" />
 
@@ -17,7 +16,7 @@
 ## Factorization Machine | Sparse data (with missing values)
 - considers only pair-wise features
 - csv is not supported
-- Doesnt work for multiclass problem 
+- Doesn't work for multi-class problem 
 - only for prediction or binary classification
 - needs lots of data
 - does not perform well on dense data
@@ -112,10 +111,10 @@ Example - DeepRacer
 **********************************************************************************************
 ## Ensemble Training | Bagging | XGBoost, AdaBoost
 - Kinda swiss army knife for many regression, classification and ranking problems.
-- Momory instance.
+- Memory instance.
 
 - Example: what price to ask for a house or car or phone?
-    - CART Classificaitona and Regression Tress based on Locaiotn, Age, Size, rooms, walk score, climate etc.
+    - CART Classification and Regression Tress based on Locaiotn, Age, Size, rooms, walk score, climate etc.
 
 Scenarios- Ranking on an e-commerce website, Fraud Detection
 
@@ -127,29 +126,6 @@ Scenarios- Ranking on an e-commerce website, Fraud Detection
 #### 2.1 Random Foreset Bagging - Bootstrap Aggregating - Parallel Tree - Avoid underfitting
 #### 2.2 Random Foreset Bagging - Boosting - Sequential - Avoid overfitting
 Learn from previous
-
-**********************************************************************************************
-# Deep Learning Algorithms
-
-## Neural Networks | Sup | Classification
-Bias: helps to not get deactivation of neuron having -ve x value upto certain threshold.
-<img src="https://i.imgur.com/VB4n0DF.png" height="300" />
-
-<img src="https://i.imgur.com/uyuRqV8.png" height="300" />
-
-## Convolutional Neural Networks CNN | Sup | Classification
-Example: Image classfication, spatial analysis, hotdog or not
-
-Process image layer by layer over edge detetion filter or multiple other filters
-<img src="https://i.imgur.com/X4YLwlG.png" height="300" />
-
-## Recurrent Neural Netowrk | Sup | Other
-Example: Stock Prediction, Time Searies, Voice recognition (Seq2Seq), 
-PATTERN which says Start activity - following certain sequence - End activity
-
-<img src="https://i.imgur.com/YIWwPYI.png" height="300" />
-
-## LSTM | more memory than RNNs
 
 
 
