@@ -439,6 +439,15 @@ Q. Bayesian vs Random Hyperparameter Tuning
 - __Bayesian__ search treats hyperparameter tuning like a [regression] problem. Given a set of input features (the hyperparameters), hyperparameter tuning optimizes a model for the metric that you choose. 
 - __Random__ search, hyperparameter tuning chooses a random combination of values from within the ranges that you specify for hyperparameters for each training job it launches
 
+Q. Steps to pass tuning job settings in hyperparameter tuning as JSON.
+- specify __value__ of HyperParameterTuningJobConfig
+- specify __range__
+- specify __objective__
+
+Q. Ways to monitor metrics of training the model.
+- AWS management Console
+- Python SDK APIs
+- CloudWatch console for visulizing time-series
 
 # Data Engineering Domain
 
