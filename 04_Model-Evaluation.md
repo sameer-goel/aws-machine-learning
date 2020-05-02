@@ -16,7 +16,7 @@ How to resolve: More Data, __Train Longer__, Add more features to dataset
 
 2. Overfitting: - Model memorizes and too much inclined with existing data. Predicting New unseen data will be a challenge.
 How to resolve: __Early stop__ based on fit threshold, More data, Sprinkle in some noise, regularization (data points smoothening), ensemble (combine models together), Drop some features.
-<img src="https://i.imgur.com/e7rAimx.png" height="200" />
+<img src="https://i.imgur.com/e7rAimx.png" height="400" />
 
 
 ### Residual Distribution | should be centerd to zero.
