@@ -385,9 +385,13 @@ Q. Hosting
 - SageMaker SDK 
     - .deploy()
 - AWS SDK
-    1. CreateModel
-    2. CreateEndpointConfig
-    3. CreateEndpoint
+    1. __CreateModel__
+    2. __CreateEndpointConfig__
+    3. __CreateEndpoint__
+
+Q. How to make change to inference pipeline.
+- deploy a new one using __UpdateEndpoint__ API
+- pipeline is immutable
 
 Q. Batch Transform
 - SageMaker SDK
@@ -481,4 +485,5 @@ don't need PERSISTENT endpoint.
 - SageMaker BATCH Transform
 
 Q. reason why Firehose data is rejected records sent by lambda
-- Firehose requires 1. recrodid 2. data params 3. result params, which might be missing.
+- Firehose requires 1. record id 2. data params 3. result params, which might be missing.
+
