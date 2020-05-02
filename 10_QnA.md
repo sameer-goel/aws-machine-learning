@@ -403,7 +403,7 @@ Q. Amazon Elastic Inference?
 
 Q. Scaling SageMaker Endpoint
 - TargetTrackingScalingPolicyConfiguration
-- reduce Cooldown period for aggresive scaling 
+- reduce Cooldown period for aggressive scaling 
 
 Q. Want to add low cost GPU
 - RE-Deploy endpoint with Elastic Inference
@@ -426,18 +426,18 @@ Q. Algo for Recommendation System
 Q. Segment customer based on their spending habits 
 - K-Means
 
-Q. Email phising 
+Q. Email phishing 
 - N-Gram
 
 Q. Starting with std pre-trained market model and then further training it 
 - Transfer Learning
 
 Q. Hyperparameter that governs how quickly model adepts new or changing data.
-- Set Learing rate at high value (0.0 - 1.0)
+- Set Learning rate at high value (0.0 - 1.0)
 
 Q. Bayesian vs Random Hyperparameter Tuning
-- __Bayesian__ search treats hyperparameter tuning like a [regression] problem. Given a set of input features (the hyperparameters), hyperparameter tuning optimizes a model for the metric that you choose. 
-- __Random__ search, hyperparameter tuning chooses a random combination of values from within the ranges that you specify for hyperparameters for each training job it launches
+- __Bayesian__ search treats hyperparameter tuning like a [regression] problem. Given a set of input features (the hyperparameter), hyperparameter tuning optimizes a model for the metric that you choose. 
+- __Random__ search, hyperparameter tuning chooses a random combination of values from within the ranges that you specify for hyperparameter for each training job it launches
 
 Q. Steps to pass tuning job settings in hyperparameter tuning as JSON.
 - specify __value__ of HyperParameterTuningJobConfig
@@ -447,7 +447,16 @@ Q. Steps to pass tuning job settings in hyperparameter tuning as JSON.
 Q. Ways to monitor metrics of training the model.
 - AWS management Console
 - Python SDK APIs
-- CloudWatch console for visulizing time-series
+- CloudWatch console for visualizing time-series
+
+Q. How to specify metrics for logging
+- specify REGEX pattern for metrics
+- CloudWatch to visualize these automatically parsed metrics
+
+Q. Visualize K-means metrics tuning job
+- specify valid metric eg. test:msd
+- use module __sagemaker.analytics__
+      import __TrainingJobAnalytics__
 
 # Data Engineering Domain
 
