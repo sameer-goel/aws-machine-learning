@@ -1,3 +1,10 @@
+# Train a model with sagemaker
+1. Built in algorithms
+2. Apache Spark
+3. AWS MarketplaceML
+4. Custom code popular frameworks
+5. Use your own algorithm
+
 # Supervised
 
 ## Linear Learner | Predict qualitative value based on numeric input | Dense Continues Data
