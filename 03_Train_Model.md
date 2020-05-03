@@ -106,10 +106,13 @@ Example - DeepRacer
 
 **********************************************************************************************
 ## Forecasting
-- Amazon DeepAR Lib for timeseries forecasting
+- Amazon DeepAR Lib for time-series forecasting
 
 **********************************************************************************************
 ## Ensemble Training | Bagging | XGBoost, AdaBoost
+- Combine models to take collective decision based on voting.
+<img src="https://i.imgur.com/PkTkAHZ.png" width="200" />
+
 - Kinda swiss army knife for many regression, classification and ranking problems.
 - Memory instance.
 
@@ -118,17 +121,34 @@ Example - DeepRacer
 
 Scenarios- Ranking on an e-commerce website, Fraud Detection
 
-**********************************************************************************************
-## Tree Based Models
+## Ensemble Training | Tree Based Models
 
 ### 1. Decision trees
-### 2. Ensemble Methods 
-#### 2.1 Random Forest Bagging - Bootstrap Aggregating - Parallel Tree - Avoid underfitting
-#### 2.2 Random Forest Bagging - Boosting - Sequential - Avoid overfitting
-Learn from previous
+<img src="https://i.imgur.com/2hlD37O.png" width="200" />
+
+### 2. Random Forest 
+<img src="https://i.imgur.com/maVyAxm.png" width="200" />
+
+### 3. Bagging | Independent and PARALLEL | Bootstrapping | Avoid underfitting
+- Split the original dataset and train models in parallel
+<img src="https://i.imgur.com/srNH6yM.png" width="200" />
+
+Kinda a way to find the most powerful superhero (Model) whoever wins the fight among all.
+<img src="https://i.imgur.com/nDX2W7Q.png" width="200" />
+
+### 4. Boosting | SEQUENTIAL | XGBoost | Boosting | Avoid overfitting
+- Various models work cooperatively to achieve the best results. The output from the first model is re-weighted and fed to another model.
+<img src="https://i.imgur.com/J91bCgx.png" width="400" />
+
+Kinda a way to where all superhero work in sequence to help each other and produce powerful outputs.
+<img src="https://i.imgur.com/SkQI3p5.png" width="400" />
+
 
 **********************************************************************************************
 
 ## Transfer Learning
-Teach maths and then teach data science
+- Pick already trained model to do similar kind of another task.
+- Eg. Teach maths and then teach data science | KT Mathematician to do machine learning
+- Eg. I re-use a bird image classification model and to classify fishes
+
 <img src="https://i.imgur.com/KgtD3dV.png" width="200" />
