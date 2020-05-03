@@ -1,4 +1,5 @@
 # Train and Deployment using SageMaker
+<img src="https://i.imgur.com/OaE8uHm.png" width="500" />
 
 # Deployment Types
 <img src="https://i.imgur.com/kg6Nyxw.png" height="300" />
@@ -22,7 +23,10 @@ __3__ Create Endpoint
 ## How to serve two result from 2 models
 - API gateway -> Lambda -> fetch multiple results
 
-## Where to check error if Training job if implemnted by pipeline
+## Where to check error if Training job if implemented by pipeline
 - DescribeJob API
 - CloudWatch
 - Console DOEST NOT HELP here
+
+## Sagemaker tools
+<img src="https://d1.awsstatic.com/re19/Sagemaker/SageMaker_Overview-Chart.247eaea6e41ddca8299c5a9a9e91b5d78b751c38.png" height="300" />
