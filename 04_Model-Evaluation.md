@@ -77,7 +77,7 @@ reduce FP, Spam detector, Explicit Content Blog, Catch just Fish
 Look for Lowest Impurity
 <img src="https://i.imgur.com/MQPGZA6.png" height="300" />
 
-## Multiclass Classification
+## MultiClass Classification
 <img src="https://i.imgur.com/HXz6Rgd.png" height="300" />
 
 *************************************************************************************
@@ -86,7 +86,7 @@ Look for Lowest Impurity
 ## Provide clear tags of Test and Validation
 <img src="https://i.imgur.com/c8IRiil.png" height="300" />
 
-## Cloudwatch graph can help to plot accuracy 
+## CloudWatch graph can help to plot accuracy 
 <img src="https://i.imgur.com/0CPxT8n.png" height="300" />
 
 ## We can define what to send to clooudwatch
