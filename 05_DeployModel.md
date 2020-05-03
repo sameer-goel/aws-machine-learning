@@ -1,4 +1,5 @@
 # Train and Deployment using SageMaker
+
 <img src="https://i.imgur.com/OaE8uHm.png" width="500" />
 
 # Deployment Types
@@ -30,4 +31,30 @@ __3__ Create Endpoint
 
 ## Sagemaker tools
 <img src="https://d1.awsstatic.com/re19/Sagemaker/SageMaker_Overview-Chart.247eaea6e41ddca8299c5a9a9e91b5d78b751c38.png" height="300" />
+
+## Production Variant
+
+1. A/B Testing with Rollout: Less Risky - Test offline and then deploy as rollout
+2. Canary: More Risky - Deploy 10:90 split of real data and shift based on performance.
+
+## Sagemaker Docker containers
+
+After a Docker image is built, it can be pushed to the Amazon Elastic Container Registry (ECR).
+
+<img src="https://i.imgur.com/UbgqDyJ.png" width="500" />
+<img src="https://i.imgur.com/MiJ4RiX.png" width="500" />
+
+Models in SageMaker are hosted in Docker containers
+- Pre built Models in scikit Learn and Spark ML
+- Pre built Models in Tensorflow , MXNet , and PyTorch
+- Custom algorithm
+
+### Docker Image Structure
+1. nginx.conf : configuration file for nginx front end.
+2. wsgi.py A wrapper used to invoke Flask application.
+3. predictor.py: program that implements Flask web server
+4. Serve: program that run when container is started for hosting.
+5. Train: program that is invoked when the container is run
+during training.
+
 

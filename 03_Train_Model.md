@@ -3,7 +3,7 @@
 2. Apache Spark
 3. AWS MarketplaceML
 4. Custom code popular frameworks: custom Python code with MXNet/TensorFlow
-5. Use your own algorithm: code placed in docker file
+5. Use your own algorithm: code placed in docker file, mention this Elastic Container Registry Path in sagemaker.
    
 # Supervised
 
