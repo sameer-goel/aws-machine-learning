@@ -112,7 +112,8 @@ Q. Linear Learner model should be tuned on?
 A. AWS recommends tuning the model against a validation metric instead of a training metric. 
 
 Q. Data is highly imbalanced like credit card fraud detection
-- FP is a big deal as fraud is not caught
+- FN is big deal and should be less, Falsely identifying fraud is negative.
 - RECALL (Type 1 error) is important here
 
-Q. Model is ok to predict to get false cases 
+Q. Model is ok to predict to get false cases but
+- FP is big deal and should be less
