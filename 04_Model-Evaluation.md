@@ -32,7 +32,7 @@ How to resolve: __Early stop__ based on fit threshold, More data, Sprinkle in so
 - if centered around positive value: prediction is too low
 <img src="https://docs.aws.amazon.com/machine-learning/latest/dg/images/mlconcepts_image4.png" height="300" />
 
-### Error
+### Regression Errors Type
 <img src="https://i.imgur.com/iPUUP55.png" height="300" />
 
 <img src="https://i.imgur.com/btT4DUz.png" height="300" />
@@ -114,8 +114,8 @@ A. AWS recommends tuning the model against a validation metric instead of a trai
 Q. Data is highly imbalanced like credit card fraud detection
 - FN is big deal and should be less, Falsely identifying fraud is negative.
 - RECALL (Type 1 error) is important here
-<img src="https://i.imgur.com/rFRl5jR.png" width="200" />
+<img src="https://i.imgur.com/rFRl5jR.png" width="400" />
 
 Q. Model is ok to predict to get false cases but
 - FP is big deal and should be less, Falsely identifying spam as positive.
-<img src="https://i.imgur.com/UqWl3Pg.png" width="200" />
+<img src="https://i.imgur.com/UqWl3Pg.png" width="400" />
