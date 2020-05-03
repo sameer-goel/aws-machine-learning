@@ -73,7 +73,3 @@ By-Default notebooks are internet enabled.
 ### Encryption 
 - Transit: TLS/SSL, Inter-container traffic encryption
 - Rest: KMS 
-   
-
-
-
