@@ -40,7 +40,7 @@ How to resolve: __Early stop__ based on fit threshold, More data, Sprinkle in so
 ### Gradient Descent
 |![](https://i.imgur.com/Vaw5vuC.png)|![]()|
 
-Step should not be too large (miss ninimum) or too small (take longer)
+Step should not be too large (miss minimum) or too small (take longer)
 <img src="https://i.imgur.com/gBpuE6A.png" height="300" />
 
 ## Binary Classification Models
@@ -54,10 +54,10 @@ Step should not be too large (miss ninimum) or too small (take longer)
 - **Recall/Sensitivity/TPR:** Measure the strength of the model to predict a positive outcome. | reduce false -ve (FN)
 Fraud Detection, Medical Diagnostics, COVID19 Test
 
-- **Specificity/TNR:** Measure the strength of the model to predict a negetive outcome.
+- **Specificity/TNR:** Measure the strength of the model to predict a negative outcome.
 reduce FP, Spam detector, Explicit Content Blog, Catch just Fish
 
-- **f1_score:** It is a combined metric. Harmonic mean of percision and recall.
+- **f1_score:** It is a combined metric. Harmonic mean of precision and recall.
 **0(𝑏𝑎𝑑)≤f1_score≤1(good)**
 
 | Accuracy  | Precision | Recall | f1 score | Specificity |
@@ -92,6 +92,15 @@ Look for Lowest Impurity
 ## We can define what to send to clooudwatch
 <img src="https://i.imgur.com/Q102ave.png" height="300" />
 
+****************************************************************************************
+### Linear Regression
+Best fitting line
+`y=w_0+w_1 x`
+
+### Log-loss (Binary Cross-Entropy)
+Check performance of binary classifier
+`LogLoss=−(y∗log(p)+(1−y)∗log⁡(1−p))`
+
 *************************************************************************************
 
 __Tips:__
@@ -102,12 +111,8 @@ A. A learning rate can be too large that it cannot find the the true global mini
 Q. Linear Learner model should be tuned on?
 A. AWS recommends tuning the model against a validation metric instead of a training metric. 
 
+Q. Data is highly imbalanced like credit card fraud detection
+- FP is a big deal as fraud is not caught
+- RECALL (Type 1 error) is important here
 
-***********
-### Linear Regression
-Best fitting line
-`y=w_0+w_1 x`
-
-### Log-loss (Binary Cross-Entropy)
-Check peformance of binary classifier
-`LogLoss=−(y∗log(p)+(1−y)∗log⁡(1−p))`
+Q. Model is ok to predict to get false cases 
