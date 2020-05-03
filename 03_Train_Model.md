@@ -71,39 +71,9 @@ Elbow Plot, variation does not change from this point
 # Anomaly Detection
 
 ## Random Cut Forest
-- provides anaomaly score
+- provides anomaly score
 
 Example: Fraud Detection, IP Insights, Quality Control
-
-**********************************************************************************************
-# AWS Image Algorithms
-
-<img src="https://i.imgur.com/xpqNKQF.png" height="300" />
-
-## LDA - Latent Dirichlet Allocation | UnSu | Classification  
-__Example: Recommendation article, Musical Influence Artist, Topic Discovery, Automated Document tagging__
-- Similar documents based on frequency of similar words
-<img src="https://i.imgur.com/UEzK4b8.png" height="300" />
-
-## NTM - Neural Topic Model
-- Perform topic modeling
-Example: Recommendation article
-
-## Seq2Seq
-- Using vocab Language translation using Neural Network
-Example - Speech to text AWS Polly
-
-## BlazingText
-- Natural Language Processing understanding context and semantic relationships
-- Faster than traditional Word2Vec and FastText
-Example - Amazon Comprehend - Sentiment analysis, 
-        - AWS Kendra - Enterprise search, 
-        - Document Classification - Amazon Macie
-
-## Object2Vec
-- Identify relation between objects.
-- sad, empathy, death as similar object
-Example - Genre of the book, movie rating
 
 **********************************************************************************************
 ## Reinforcement Learning
@@ -159,3 +129,41 @@ Kinda a way to where all superhero work in sequence to help each other and produ
 - Eg. I re-use a bird image classification model and to classify fishes
 
 <img src="https://i.imgur.com/KgtD3dV.png" width="200" />
+
+**********************************************************************************************
+# AWS Image Algorithms
+
+<img src="https://i.imgur.com/xpqNKQF.png" height="300" />
+
+1. Image Classification | ResNet CNN
+2. Object Detection | ResNet VGG (Visual Geometry Group)
+3. Semantic segmentation |
+
+<img src="https://miro.medium.com/max/5856/1*Hz6t-tokG1niaUfmcysusw.jpeg" height="300" />
+**********************************************************************************************
+# AWS Text Algorithms
+
+## LDA - Latent Dirichlet Allocation | UnSu | Classification  
+__Example: Recommendation article, Musical Influence Artist, Topic Discovery, Automated Document tagging__
+- Similar documents based on frequency of similar words
+<img src="https://i.imgur.com/UEzK4b8.png" height="300" />
+
+## NTM - Neural Topic Model
+- Perform topic modeling
+Example: Recommendation article
+
+## Seq2Seq
+- Using vocab Language translation using Neural Network
+Example - Speech to text AWS Polly
+
+## BlazingText
+- Natural Language Processing understanding context and semantic relationships
+- Faster than traditional Word2Vec and FastText
+Example - Amazon Comprehend - Sentiment analysis, 
+        - AWS Kendra - Enterprise search, 
+        - Document Classification - Amazon Macie
+
+## Object2Vec
+- Identify relation between objects.
+- sad, empathy, death as similar object
+Example - Genre of the book, movie rating from text reviews
