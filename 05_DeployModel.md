@@ -30,3 +30,4 @@ __3__ Create Endpoint
 
 ## Sagemaker tools
 <img src="https://d1.awsstatic.com/re19/Sagemaker/SageMaker_Overview-Chart.247eaea6e41ddca8299c5a9a9e91b5d78b751c38.png" height="300" />
+
