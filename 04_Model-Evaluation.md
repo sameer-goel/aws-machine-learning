@@ -115,7 +115,7 @@ Q. Data is highly imbalanced like credit card fraud detection
 - FN is big deal and should be less, Falsely identifying fraud is negative.
 - RECALL (Type 1 error) is important here
 
-<img src="https://i.imgur.com/rFRl5jR.png" width="400" /><img src="https://i.imgur.com/UqWl3Pg.png" width="400" />
+<img src="https://i.imgur.com/rFRl5jR.png" width="400" /> <img src="https://i.imgur.com/UqWl3Pg.png" width="400" />
 
 Q. Model is ok to predict to get false cases but
 - FP is big deal and should be less, Falsely identifying spam as positive.

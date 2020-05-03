@@ -123,10 +123,12 @@ Scenarios- Ranking on an e-commerce website, Fraud Detection
 
 ### 1. Decision trees
 ### 2. Ensemble Methods 
-#### 2.1 Random Foreset Bagging - Bootstrap Aggregating - Parallel Tree - Avoid underfitting
-#### 2.2 Random Foreset Bagging - Boosting - Sequential - Avoid overfitting
+#### 2.1 Random Forest Bagging - Bootstrap Aggregating - Parallel Tree - Avoid underfitting
+#### 2.2 Random Forest Bagging - Boosting - Sequential - Avoid overfitting
 Learn from previous
 
+**********************************************************************************************
 
-
-
+## Transfer Learning
+Teach maths and then teach data science
+<img src="https://i.imgur.com/KgtD3dV.png" width="200" />
