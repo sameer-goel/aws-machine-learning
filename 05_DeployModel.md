@@ -57,4 +57,23 @@ Models in SageMaker are hosted in Docker containers
 5. Train: program that is invoked when the container is run
 during training.
 
+## Sagemaker Security
+By-Default notebooks are internet enabled.
+
+1. S3
+- Resource based: ACL
+- User-based: IAM, MFA, TAGs
+- Macie to find sensitive data in S3
+
+2. Auditing - CloudTrail
+3. Logs - CloudWatch
+4. VPC Endpoints, connection over private links
+
+
+### Encryption 
+- Transit: TLS/SSL, Inter-container traffic encryption
+- Rest: KMS 
+   
+
+
 
