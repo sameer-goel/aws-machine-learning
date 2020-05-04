@@ -72,9 +72,9 @@ We can learn to predict missing values from complete samples using some machine 
 - Note: Some algorithms like **decision trees** and **random forests** aren’t sensitive to features on different scales
 - Common choices (both for linear)
     - Mean/variance standardization
-    - MinMaxscaling
+    - MinMaxScaling
 
-### 2.a Normalization/Min-Max scaling: Transoform the between 0 and 1, but Outliers can create problems 
+### 2.a Normalization/Min-Max scaling: Transform the between 0 and 1, but Outliers can create problems 
 so its good to remove any outliers before doing normalization (random-cut forest can be used with outliers).
 <img src="https://i.imgur.com/d3FL118.png" height="200" />
 
@@ -90,27 +90,27 @@ Create bins for scattered values like 0-25, 25-50, 50-73
 
 ## Text Cleaning | NLtk lib (Natural Language Tool Kit)
 
-### 1 Traform to lower case --> remove white spaces --> Removing Punctiation and Stop words
+### 1 Transform to lower case --> remove white spaces --> Removing Punctuation and Stop words
 remove "A", "An", "The", "is", "are"
 
-### 2 Stemming and Synonym nomalization
+### 2 Stemming and Synonym normalization
 jumping --> jump, awesome, wonderful, great --> great
 
 ### 3 Bag of words or N Gram =1
 Tokenize each word if N Gram/Unigram is 1 but let say it is 2/Bi-gram or more, it will tokenize words like:
 BiGram - "not good", "Very Poor"
-TriGram - "hip hip hurrey"
+TriGram - "hip hip hurray"
 
 #### 3a Orthogonal Sparse Bigram (OSB)
 <img src="https://i.imgur.com/7d3VltX.png" width="600" />
 
 ### 4 TF-idf Term Frequency - Inverse Document Frequency
-Used to filter out not importnt common words
+Used to filter out not important common words
 <img src="https://i.imgur.com/ZwjMTvz.png" width="800" />
 
 **Example:** A term frequency–inverse document frequency (tf–idf) matrix using both unigrams and bigrams is built from a text corpus consisting of the following two sentences: { Hello world } and { Hello how are you }. What are the dimensions of the tf–idf vector/matrix? 
 
-**Sol:**There are 2 sentences (or corpus data we are vectorizing) with 5 unique unigrams ('are', 'hello', 'how', 'world', 'you') and there are 4 unique bigrams ('are you', 'hello how', 'hello world', 'how are'). So the vectorized matrix would be (2, 9). 
+**Sol:**There are 2 sentences (or corpus data we are factorizing) with 5 unique unigrams ('are', 'hello', 'how', 'world', 'you') and there are 4 unique bigrams ('are you', 'hello how', 'hello world', 'how are'). So the vectorized matrix would be (2, 9). 
 
 ### Use-case of each method
 ![](https://i.imgur.com/QISoj20.png)
