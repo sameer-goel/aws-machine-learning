@@ -509,3 +509,8 @@ Q. reason why Firehose data is rejected records sent by lambda
 - RNN - Recurrent Neural Networks are mostly for __text or speech__ use-cases where sequence prediction is key.
 - Binary Classification - AUC->1 is metric to look for. | logistic or hinge_loss is objective.
 - MultiClass Classification - Macro F1 score to look for. | muti:softmax is objective.
+- Seq2Seq can is used for translation and summarization
+
+`Important`
+- XGBoost requires only numerical features plus this Tree-based algo can handle features with different scale (no need to normalize/standardize)
+- Tree based algorithm can have lower and upper bound limit it can predict for regression. (random forest, xgboost)
