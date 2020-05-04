@@ -83,7 +83,7 @@ By-Default notebooks are internet enabled.
 
 `Actual Update Steps`
 5. Create NEW Endpoint config (__CreateEndpointConfig__)
-6. Update endpoint (__UpdateEndpoint__)
-7. Re-enable automatic scaling by (__RegisterScalableTarget__)
+6. Update endpoint (__UpdateEndpoint__) with latest modelS3 path.
+7. Re-enable automatic scaling by(__RegisterScalableTarget__)
 
 ## 

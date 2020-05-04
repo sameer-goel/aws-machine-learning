@@ -58,14 +58,6 @@ Ref: https://github.com/aws/sagemaker-containers/blob/master/README.rst
 - XGBoost Algorithm ----- (Amazon Fraud Detector)
 - K-Nearest Neighbors (k-NN) Algorithm - Credit ratings, product recommendations (Amazon Personalize)
 
-### TIP
-
-- CNN - Convolutional Neural Networks are mostly for __image and signal__ processing. 
-- RNN - Recurrent Neural Networks are mostly for __text or speech__ use-cases where sequence prediction is key.
-- Binary Classification - AUC->1 is metric to look for. | logistic or hinge_loss is objective.
-- MultiClass Classification - Macro F1 score to look for. | muti:softmax is objective.
-
-
 ### Services:
 - Amazon Polly - Text to Speech
 - Amazon Transcribe - Speech to Text
@@ -126,12 +118,15 @@ Q. Visual Types
 
 ## Questions on Data Prep
 
+Q. Month field is Ordinal or Nominal
+- Month is Nominal so One-Hot Encoder
+
 Q. 20% Numeric Data is missing
 - Regression imputation
 - Regularization imputation
 
 Q. 20% Categorical data is missing
-- KNN
+- use KNN
 
 Q. Classify good and bad sentences using LSTM
 - Vectorize sentences -> Transform them to NUMERIC with PADDING -> Use sentences as input
@@ -150,7 +145,7 @@ __Q. Scaling__
 - In scaling (also called min-max scaling), you transform the data such that the features are within a specific range e.g. [0, 1].
 <img src="https://i.imgur.com/tpEqnnB.png" height="300" />
 
-Q. PCA and t-SNE Automatic feature extraction
+Q. [PCA and t-SNE](https://towardsdatascience.com/visualising-high-dimensional-datasets-using-pca-and-t-sne-in-python-8ef87e7915b) Automatic feature extraction
 - PCA is for linear models
 - t-SNE for non-linear models
 
@@ -508,3 +503,9 @@ don't need PERSISTENT endpoint.
 Q. reason why Firehose data is rejected records sent by lambda
 - Firehose requires 1. record id 2. data params 3. result params, which might be missing.
 
+### TIPs and Misc
+
+- CNN - Convolutional Neural Networks are mostly for __image and signal__ processing. 
+- RNN - Recurrent Neural Networks are mostly for __text or speech__ use-cases where sequence prediction is key.
+- Binary Classification - AUC->1 is metric to look for. | logistic or hinge_loss is objective.
+- MultiClass Classification - Macro F1 score to look for. | muti:softmax is objective.
