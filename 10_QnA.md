@@ -415,6 +415,9 @@ Q. ML Lib for capturing IoT data
 - MLib for building Model
 - SparkML serving container to Deploy this pipeline
 
+Q. What is Horovod? 
+- It is a framework allowing a user to distribute a deep learning workload among multiple compute nodes and take advantage of inherent parallelism of deep learning training process.
+
 
 # Exploratory data analysis
 
@@ -514,3 +517,6 @@ Q. reason why Firehose data is rejected records sent by lambda
 `Important`
 - XGBoost requires only numerical features plus this Tree-based algo can handle features with different scale (no need to normalize/standardize)
 - Tree based algorithm can have lower and upper bound limit it can predict for regression. (random forest, xgboost)
+
+- When tuning the model, don't use Test data, use validation data.
+- Seq2Se2 model needs RecordIO-protobuf with INTEGER tokens
