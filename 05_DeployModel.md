@@ -73,3 +73,17 @@ By-Default notebooks are internet enabled.
 ### Encryption 
 - Transit: TLS/SSL, Inter-container traffic encryption
 - Rest: KMS 
+
+## [Update endpoints](https://docs.aws.amazon.com/sagemaker/latest/dg/endpoint-scaling.html) that use automatic scaling
+
+1. De-register endpoint as (DeregisterScalableTarget)
+2. As auto-scaling is off, as a precaution you can update instance count for production, just in case there us heavy traffic (UpdateEndpointWeightsAndCapacities)
+3. Wait for Endpoint to be __InService__ (DescribeEndpoint).
+4. Call DescribeEndpointConfig to get the current config.
+
+`Actual Update Steps`
+5. Create NEW Endpoint config (__CreateEndpointConfig__)
+6. Update endpoint (__UpdateEndpoint__)
+7. Re-enable automatic scaling by (__RegisterScalableTarget__)
+
+## 
