@@ -1,4 +1,4 @@
-# Data Prepration
+# Data Preparation
 
 Most important and time consuming process of Data Science like Tex cleaning, Missing Values, Outliers, OneHot encoding, Unform data types.
 
@@ -42,7 +42,7 @@ Tip: Multi-collinearity
 ************************************************************************************
 
 Now we have understood the data, lets work on making this dataset Cleaned
-## Step 2: Tyding the data, solving data imbalance to avoid model bias
+## Step 2: Cleaning the data, solving data imbalance to avoid model bias
 
 Down Sampling, Up Sampling, Data Augmentation, Up/down Weights.
 <img src="https://i.imgur.com/MsaYUDT.png" height="300" />
@@ -54,9 +54,13 @@ Down Sampling, Up Sampling, Data Augmentation, Up/down Weights.
 * Common point imputation: Use the **most common value/mode** for that column to replace missing values. Useful for **categorical** variables.
 `df['col_name'].fillna((df['col_name'].mode()), inplace=True)`
 
+__TIP__
+- For most numerical values MEAN imputation is rule of thumb.
+- For numerical values having outliers, MODE imputation works better.
+
 #### 1.1 Advance Imputation
 We can learn to predict missing values from complete samples using some machine learning techniques. 
-* For example: AWS Datawigtool uses Suvervised Learning neural networks to predict missing values in tabular data. https://github.com/awslabs/datawig 
+* For example: AWS Datawigtool uses Supervised Learning neural networks to predict missing values in tabular data. https://github.com/awslabs/datawig 
 
 1. MAR Missing at Random
 2. MCAR Missing completely at Random

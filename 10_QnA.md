@@ -418,6 +418,10 @@ Q. ML Lib for capturing IoT data
 Q. What is Horovod? 
 - It is a framework allowing a user to distribute a deep learning workload among multiple compute nodes and take advantage of inherent parallelism of deep learning training process.
 
+Q. When deploying the custom inference container in SageMaker.
+- Respond to /invocation and /ping on port :8080
+- Accept all socket connection request within 250 ms.
+- artifacts be compressed in TAR .tar format
 
 # Exploratory data analysis
 
